@@ -42,7 +42,7 @@ var server = net.createServer(function (socket) {
 
   // handle
   function handle(data) {
-    console.log("just logging to simulate for delay");
+    console.log(data);
     reply(data);
   }
 
@@ -62,6 +62,6 @@ var server = net.createServer(function (socket) {
     });
   }
 
-}).listen(8124);
+}).listen(8124, '127.0.0.1');
 
 
