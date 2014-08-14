@@ -18,8 +18,8 @@ String to Integer
     eval(a)        x 5,536,882  ops/sec ±0.56% (92 runs sampled)
     a ^ 0          x 23,444,139 ops/sec ±0.68% (90 runs sampled)
 
-Rouding Numbers
----------------
+Rounding Numbers
+----------------
 **winner**: `Math#floor`
 
     Math#floor     x 91,614,523 ops/sec ±0.97% (96 runs sampled)

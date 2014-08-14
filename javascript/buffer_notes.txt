@@ -10,6 +10,7 @@
 [ READ ] noAssert=false buffer=fast type=Int16BE  millions=1: 62.336
 [ READ ] noAssert=false buffer=fast type=Int32LE  millions=1: 58.746
 [ READ ] noAssert=false buffer=fast type=Int32BE  millions=1: 58.950
+
 [ READ ] noAssert=true  buffer=fast type=UInt16LE millions=1: 98.341
 [ READ ] noAssert=true  buffer=fast type=UInt16BE millions=1: 103.98
 [ READ ] noAssert=true  buffer=fast type=UInt32LE millions=1: 83.998
@@ -24,16 +25,17 @@
  My Node Buffer Implementation
 ================================================================================
 
-[READ] noAssert=false buffer=fast type=UInt16LE millions=1: 73.110
-[READ] noAssert=false buffer=fast type=UInt16BE millions=1: 70.018
+[READ] noAssert=false buffer=fast type=UInt16LE millions=1: 71.225
+[READ] noAssert=false buffer=fast type=UInt16BE millions=1: 72.416
 [READ] noAssert=false buffer=fast type=UInt32LE millions=1: 61.202
 [READ] noAssert=false buffer=fast type=UInt32BE millions=1: 60.035
 [READ] noAssert=false buffer=fast type=Int16LE  millions=1: 66.614
 [READ] noAssert=false buffer=fast type=Int16BE  millions=1: 62.360
 [READ] noAssert=false buffer=fast type=Int32LE  millions=1: 53.820
 [READ] noAssert=false buffer=fast type=Int32BE  millions=1: 58.175
-[READ] noAssert=true  buffer=fast type=UInt16LE millions=1: 103.51
-[READ] noAssert=true  buffer=fast type=UInt16BE millions=1: 98.603
+
+[READ] noAssert=true  buffer=fast type=UInt16LE millions=1: 104.06
+[READ] noAssert=true  buffer=fast type=UInt16BE millions=1: 101.89
 [READ] noAssert=true  buffer=fast type=UInt32LE millions=1: 84.988
 [READ] noAssert=true  buffer=fast type=UInt32BE millions=1: 81.604
 [READ] noAssert=true  buffer=fast type=Int16LE  millions=1: 83.175
