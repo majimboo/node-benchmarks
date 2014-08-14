@@ -97,3 +97,12 @@ Buffer Read
     buf.myRead          x 8,652,745  ops/sec ±0.21% (100 runs sampled)
     buf.read noAssert   x 7,642,126  ops/sec ±0.44% (96 runs sampled)
     buf.myRead noAssert x 14,967,410 ops/sec ±0.50% (95 runs sampled)
+
+Buffer Write
+------------
+**winner**: `buf.myWrite noAssert`
+
+    buf.write            x 17,435,868 ops/sec ±0.28% (100 runs sampled)
+    buf.myWrite          x 24,109,185 ops/sec ±0.42% (92 runs sampled)
+    buf.write noAssert   x 34,191,147 ops/sec ±0.33% (95 runs sampled)
+    buf.myWrite noAssert x 34,603,573 ops/sec ±0.55% (92 runs sampled)

@@ -1,0 +1,123 @@
+================================================================================
+ Original Node Buffer Implementation
+================================================================================
+
+buffers/buffer-read.js
+buffers/buffer-read.js noAssert=false buffer=fast type=UInt8 millions=1: 87.464
+buffers/buffer-read.js noAssert=false buffer=fast type=UInt16LE millions=1: 73.816
+buffers/buffer-read.js noAssert=false buffer=fast type=UInt16BE millions=1: 73.702
+buffers/buffer-read.js noAssert=false buffer=fast type=UInt32LE millions=1: 65.709
+buffers/buffer-read.js noAssert=false buffer=fast type=UInt32BE millions=1: 63.894
+buffers/buffer-read.js noAssert=false buffer=fast type=Int8 millions=1: 84.404
+buffers/buffer-read.js noAssert=false buffer=fast type=Int16LE millions=1: 68.416
+buffers/buffer-read.js noAssert=false buffer=fast type=Int16BE millions=1: 66.125
+buffers/buffer-read.js noAssert=false buffer=fast type=Int32LE millions=1: 59.989
+buffers/buffer-read.js noAssert=false buffer=fast type=Int32BE millions=1: 60.199
+buffers/buffer-read.js noAssert=false buffer=fast type=FloatLE millions=1: 20.831
+buffers/buffer-read.js noAssert=false buffer=fast type=FloatBE millions=1: 18.473
+buffers/buffer-read.js noAssert=false buffer=fast type=DoubleLE millions=1: 20.825
+buffers/buffer-read.js noAssert=false buffer=fast type=DoubleBE millions=1: 18.006
+buffers/buffer-read.js noAssert=false buffer=slow type=UInt8 millions=1: 87.160
+buffers/buffer-read.js noAssert=false buffer=slow type=UInt16LE millions=1: 72.536
+buffers/buffer-read.js noAssert=false buffer=slow type=UInt16BE millions=1: 61.029
+buffers/buffer-read.js noAssert=false buffer=slow type=UInt32LE millions=1: 66.182
+buffers/buffer-read.js noAssert=false buffer=slow type=UInt32BE millions=1: 63.426
+buffers/buffer-read.js noAssert=false buffer=slow type=Int8 millions=1: 84.380
+buffers/buffer-read.js noAssert=false buffer=slow type=Int16LE millions=1: 68.074
+buffers/buffer-read.js noAssert=false buffer=slow type=Int16BE millions=1: 66.980
+buffers/buffer-read.js noAssert=false buffer=slow type=Int32LE millions=1: 59.554
+buffers/buffer-read.js noAssert=false buffer=slow type=Int32BE millions=1: 59.890
+buffers/buffer-read.js noAssert=false buffer=slow type=FloatLE millions=1: 20.919
+buffers/buffer-read.js noAssert=false buffer=slow type=FloatBE millions=1: 18.438
+buffers/buffer-read.js noAssert=false buffer=slow type=DoubleLE millions=1: 20.833
+buffers/buffer-read.js noAssert=false buffer=slow type=DoubleBE millions=1: 18.101
+buffers/buffer-read.js noAssert=true buffer=fast type=UInt8 millions=1: 139.50
+buffers/buffer-read.js noAssert=true buffer=fast type=UInt16LE millions=1: 101.68
+buffers/buffer-read.js noAssert=true buffer=fast type=UInt16BE millions=1: 105.86
+buffers/buffer-read.js noAssert=true buffer=fast type=UInt32LE millions=1: 86.116
+buffers/buffer-read.js noAssert=true buffer=fast type=UInt32BE millions=1: 87.042
+buffers/buffer-read.js noAssert=true buffer=fast type=Int8 millions=1: 134.34
+buffers/buffer-read.js noAssert=true buffer=fast type=Int16LE millions=1: 87.370
+buffers/buffer-read.js noAssert=true buffer=fast type=Int16BE millions=1: 91.031
+buffers/buffer-read.js noAssert=true buffer=fast type=Int32LE millions=1: 79.486
+buffers/buffer-read.js noAssert=true buffer=fast type=Int32BE millions=1: 73.638
+buffers/buffer-read.js noAssert=true buffer=fast type=FloatLE millions=1: 23.261
+buffers/buffer-read.js noAssert=true buffer=fast type=FloatBE millions=1: 20.373
+buffers/buffer-read.js noAssert=true buffer=fast type=DoubleLE millions=1: 22.943
+buffers/buffer-read.js noAssert=true buffer=fast type=DoubleBE millions=1: 19.698
+buffers/buffer-read.js noAssert=true buffer=slow type=UInt8 millions=1: 132.15
+buffers/buffer-read.js noAssert=true buffer=slow type=UInt16LE millions=1: 104.43
+buffers/buffer-read.js noAssert=true buffer=slow type=UInt16BE millions=1: 105.73
+buffers/buffer-read.js noAssert=true buffer=slow type=UInt32LE millions=1: 84.482
+buffers/buffer-read.js noAssert=true buffer=slow type=UInt32BE millions=1: 87.326
+buffers/buffer-read.js noAssert=true buffer=slow type=Int8 millions=1: 128.59
+buffers/buffer-read.js noAssert=true buffer=slow type=Int16LE millions=1: 87.509
+buffers/buffer-read.js noAssert=true buffer=slow type=Int16BE millions=1: 87.080
+buffers/buffer-read.js noAssert=true buffer=slow type=Int32LE millions=1: 79.774
+buffers/buffer-read.js noAssert=true buffer=slow type=Int32BE millions=1: 69.801
+buffers/buffer-read.js noAssert=true buffer=slow type=FloatLE millions=1: 23.267
+buffers/buffer-read.js noAssert=true buffer=slow type=FloatBE millions=1: 20.023
+buffers/buffer-read.js noAssert=true buffer=slow type=DoubleLE millions=1: 23.536
+buffers/buffer-read.js noAssert=true buffer=slow type=DoubleBE millions=1: 19.805
+
+buffers/buffer-write.js
+buffers/buffer-write.js noAssert=false buffer=fast type=UInt8 millions=1: 72.653
+buffers/buffer-write.js noAssert=false buffer=fast type=UInt16LE millions=1: 63.169
+buffers/buffer-write.js noAssert=false buffer=fast type=UInt16BE millions=1: 63.016
+buffers/buffer-write.js noAssert=false buffer=fast type=UInt32LE millions=1: 53.322
+buffers/buffer-write.js noAssert=false buffer=fast type=UInt32BE millions=1: 50.791
+buffers/buffer-write.js noAssert=false buffer=fast type=Int8 millions=1: 64.973
+buffers/buffer-write.js noAssert=false buffer=fast type=Int16LE millions=1: 58.791
+buffers/buffer-write.js noAssert=false buffer=fast type=Int16BE millions=1: 57.957
+buffers/buffer-write.js noAssert=false buffer=fast type=Int32LE millions=1: 53.902
+buffers/buffer-write.js noAssert=false buffer=fast type=Int32BE millions=1: 52.193
+buffers/buffer-write.js noAssert=false buffer=fast type=FloatLE millions=1: 22.230
+buffers/buffer-write.js noAssert=false buffer=fast type=FloatBE millions=1: 21.454
+buffers/buffer-write.js noAssert=false buffer=fast type=DoubleLE millions=1: 22.565
+buffers/buffer-write.js noAssert=false buffer=fast type=DoubleBE millions=1: 20.726
+buffers/buffer-write.js noAssert=false buffer=slow type=UInt8 millions=1: 72.974
+buffers/buffer-write.js noAssert=false buffer=slow type=UInt16LE millions=1: 62.357
+buffers/buffer-write.js noAssert=false buffer=slow type=UInt16BE millions=1: 58.547
+buffers/buffer-write.js noAssert=false buffer=slow type=UInt32LE millions=1: 53.138
+buffers/buffer-write.js noAssert=false buffer=slow type=UInt32BE millions=1: 52.104
+buffers/buffer-write.js noAssert=false buffer=slow type=Int8 millions=1: 65.756
+buffers/buffer-write.js noAssert=false buffer=slow type=Int16LE millions=1: 59.020
+buffers/buffer-write.js noAssert=false buffer=slow type=Int16BE millions=1: 57.950
+buffers/buffer-write.js noAssert=false buffer=slow type=Int32LE millions=1: 53.828
+buffers/buffer-write.js noAssert=false buffer=slow type=Int32BE millions=1: 52.497
+buffers/buffer-write.js noAssert=false buffer=slow type=FloatLE millions=1: 21.348
+buffers/buffer-write.js noAssert=false buffer=slow type=FloatBE millions=1: 20.516
+buffers/buffer-write.js noAssert=false buffer=slow type=DoubleLE millions=1: 21.624
+buffers/buffer-write.js noAssert=false buffer=slow type=DoubleBE millions=1: 20.516
+buffers/buffer-write.js noAssert=true buffer=fast type=UInt8 millions=1: 120.40
+buffers/buffer-write.js noAssert=true buffer=fast type=UInt16LE millions=1: 84.690
+buffers/buffer-write.js noAssert=true buffer=fast type=UInt16BE millions=1: 94.364
+buffers/buffer-write.js noAssert=true buffer=fast type=UInt32LE millions=1: 79.915
+buffers/buffer-write.js noAssert=true buffer=fast type=UInt32BE millions=1: 80.635
+buffers/buffer-write.js noAssert=true buffer=fast type=Int8 millions=1: 110.81
+buffers/buffer-write.js noAssert=true buffer=fast type=Int16LE millions=1: 88.396
+buffers/buffer-write.js noAssert=true buffer=fast type=Int16BE millions=1: 87.697
+buffers/buffer-write.js noAssert=true buffer=fast type=Int32LE millions=1: 70.383
+buffers/buffer-write.js noAssert=true buffer=fast type=Int32BE millions=1: 69.048
+buffers/buffer-write.js noAssert=true buffer=fast type=FloatLE millions=1: 26.476
+buffers/buffer-write.js noAssert=true buffer=fast type=FloatBE millions=1: 24.532
+buffers/buffer-write.js noAssert=true buffer=fast type=DoubleLE millions=1: 26.681
+buffers/buffer-write.js noAssert=true buffer=fast type=DoubleBE millions=1: 27.094
+buffers/buffer-write.js noAssert=true buffer=slow type=UInt8 millions=1: 120.77
+buffers/buffer-write.js noAssert=true buffer=slow type=UInt16LE millions=1: 97.415
+buffers/buffer-write.js noAssert=true buffer=slow type=UInt16BE millions=1: 92.019
+buffers/buffer-write.js noAssert=true buffer=slow type=UInt32LE millions=1: 76.263
+buffers/buffer-write.js noAssert=true buffer=slow type=UInt32BE millions=1: 76.463
+buffers/buffer-write.js noAssert=true buffer=slow type=Int8 millions=1: 99.274
+buffers/buffer-write.js noAssert=true buffer=slow type=Int16LE millions=1: 83.512
+buffers/buffer-write.js noAssert=true buffer=slow type=Int16BE millions=1: 86.159
+buffers/buffer-write.js noAssert=true buffer=slow type=Int32LE millions=1: 74.461
+buffers/buffer-write.js noAssert=true buffer=slow type=Int32BE millions=1: 72.392
+buffers/buffer-write.js noAssert=true buffer=slow type=FloatLE millions=1: 30.806
+buffers/buffer-write.js noAssert=true buffer=slow type=FloatBE millions=1: 27.853
+buffers/buffer-write.js noAssert=true buffer=slow type=DoubleLE millions=1: 32.626
+buffers/buffer-write.js noAssert=true buffer=slow type=DoubleBE millions=1: 27.124
+
+================================================================================
+ My Node Buffer Implementation
+================================================================================

@@ -23,8 +23,8 @@ Buffer.prototype.myWriteUInt16LE = function(value, offset, noAssert) {
   if (!noAssert) {
     checkInt(this, value, offset, 2, 0xffff, 0);
   }
-  this[offset] = val & 0xFF;
-  this[offset + 1] = (val >> 8) & 0xFF;
+  this[offset] = value & 0xFF;
+  this[offset + 1] = (value >> 8) & 0xFF;
   return offset + 2;
 };
 
@@ -34,10 +34,10 @@ Buffer.prototype.myWriteUInt32LE = function(value, offset, noAssert) {
   if (!noAssert) {
     checkInt(this, value, offset, 4, 0xffffffff, 0);
   }
-  this[offset] = val & 0xFF;
-  this[offset + 1] = (val >> 8) & 0xFF;
-  this[offset + 2] = (val >> 16) & 0xFF;
-  this[offset + 3] = (val >> 24) & 0xFF;
+  this[offset] = value & 0xFF;
+  this[offset + 1] = (value >> 8) & 0xFF;
+  this[offset + 2] = (value >> 16) & 0xFF;
+  this[offset + 3] = (value >> 24) & 0xFF;
   return offset + 4;
 };
 
@@ -53,6 +53,16 @@ suite
 .add('buf.myWrite', function() {
   buf.myWriteUInt16LE(500, 0);
   buf.myWriteUInt32LE(500, 0);
+})
+
+.add('buf.write noAssert', function() {
+  buf.writeUInt16LE(500, 0, true);
+  buf.writeUInt32LE(500, 0, true);
+})
+
+.add('buf.myWrite noAssert', function() {
+  buf.myWriteUInt16LE(500, 0, true);
+  buf.myWriteUInt32LE(500, 0, true);
 })
 
 // add listeners
