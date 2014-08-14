@@ -1,3 +1,24 @@
+var should = require('chai').should();
+var expect = require('chai').expect;
+
+var list = ["foo5","bar","baz","foo5","foo5","foo","foo5","foo5","foo5","foo","foo5","foo5","foo5","foo","foo5","foo5","foo5","foo","foo5","foo5","foo5","foo","bar","baz","bar","baz","bar","bazfoobs"];
+
+describe('#filterDuplicates', function () {
+  it('should remove duplicated values', function (done) {
+    var uniq = filterDuplicates(list);
+    console.log(uniq);
+    done();
+  });
+});
+
+describe('#eliminateDuplicates', function () {
+  it('should remove duplicated values', function (done) {
+    var uniq = eliminateDuplicates(list);
+    console.log(uniq);
+    done();
+  });
+});
+
 // joyent/node/blob/5344d0c1034b28f9e6de914430d8c8436ad85105/lib/crypto.js#L609
 function filterDuplicates(names) {
   // Drop all-caps names in favor of their lowercase aliases,
@@ -46,8 +67,3 @@ function eliminateDuplicates(names) {
 
   return map(ctx_names).sort();
 }
-
-var duplicates = ["foo5","bar","baz","foo5","foo5","foo","foo5","foo5","foo5","foo","foo5","foo5","foo5","foo","foo5","foo5","foo5","foo","foo5","foo5","foo5","foo","bar","baz","bar","baz","bar","bazfoobs"];
-
-console.log(filterDuplicates(duplicates));
-console.log(eliminateDuplicates(duplicates));

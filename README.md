@@ -1,12 +1,9 @@
-Benchmarks
-==========
-
 Node.JS
--------
+=======
 
-#### String to Integer ####
-
-**winner**: parseInt(a,10)
+String to Integer
+-----------------
+**winner**: `parseInt(a,10)`
 
     parseInt       x 40,305,021 ops/sec ±0.81% (95 runs sampled)
     parseInt(a,10) x 46,662,459 ops/sec ±1.48% (86 runs sampled)
@@ -21,9 +18,9 @@ Node.JS
     eval(a)        x 5,536,882  ops/sec ±0.56% (92 runs sampled)
     a ^ 0          x 23,444,139 ops/sec ±0.68% (90 runs sampled)
 
-#### Rouding Numbers ####
-
-**winner**: Math#floor
+Rouding Numbers
+---------------
+**winner**: `Math#floor`
 
     Math#floor     x 91,614,523 ops/sec ±0.97% (96 runs sampled)
     parseInt       x 38,430,130 ops/sec ±0.91% (87 runs sampled)
@@ -36,25 +33,25 @@ Node.JS
     Int#toFixed    x 2,911,860  ops/sec ±0.69% (93 runs sampled)
     modulo         x 77,863,883 ops/sec ±1.04% (91 runs sampled)
 
-#### Object Loop ####
-
-**winner**: for Object#keys.length
+Object Loop
+-----------
+**winner**: `for Object#keys.length`
 
     prop in Object         x 1,231,135 ops/sec ±0.25% (97 runs sampled)
     forEach Object#keys    x 1,962,596 ops/sec ±0.21% (100 runs sampled)
     for Object#keys.length x 3,286,807 ops/sec ±0.39% (97 runs sampled)
 
-#### Array Filter ####
-
-**winner**: lodash#filter
+Array Filter
+------------
+**winner**: `lodash#filter`
 
     Array#filter      x 364,000 ops/sec ±1.86% (81 runs sampled)
     underscore#filter x 360,219 ops/sec ±1.70% (91 runs sampled)
     lodash#filter     x 920,773 ops/sec ±0.39% (99 runs sampled)
 
-#### Removing Duplicates ####
-
-**winner**: eliminateDuplicates
+Removing Duplicates
+-------------------
+**winner**: `eliminateDuplicates`
 
     filterDuplicates    x 105,630 ops/sec ±0.69% (98 runs sampled)
     eliminateDuplicates x 187,981 ops/sec ±0.30% (102 runs sampled)

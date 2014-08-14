@@ -4,9 +4,14 @@
   "description": "Benchmarks",
   "dependencies": {
     "benchmark": "^1.0.0",
+    "chai": "^1.9.1",
     "lodash": "^2.4.1",
     "microtime": "^1.0.1",
+    "mocha": "^1.21.4",
     "underscore": "^1.6.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "devDependencies": {},
   "repository": {
