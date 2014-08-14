@@ -6,7 +6,11 @@ var list = ["foo5","bar","baz","foo5","foo5","foo","foo5","foo5","foo5","foo","f
 describe('#filterDuplicates', function () {
   it('should remove duplicated values', function (done) {
     var uniq = filterDuplicates(list);
-    console.log(uniq);
+    uniq[0].should.equal('bar');
+    uniq[1].should.equal('baz');
+    uniq[2].should.equal('bazfoobs');
+    uniq[3].should.equal('foo');
+    uniq[4].should.equal('foo5');
     done();
   });
 });
@@ -14,7 +18,11 @@ describe('#filterDuplicates', function () {
 describe('#eliminateDuplicates', function () {
   it('should remove duplicated values', function (done) {
     var uniq = eliminateDuplicates(list);
-    console.log(uniq);
+    uniq[0].should.equal('bar');
+    uniq[1].should.equal('baz');
+    uniq[2].should.equal('bazfoobs');
+    uniq[3].should.equal('foo');
+    uniq[4].should.equal('foo5');
     done();
   });
 });
