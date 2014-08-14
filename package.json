@@ -1,0 +1,22 @@
+{
+  "name": "benchmarks",
+  "version": "0.0.1",
+  "description": "Benchmarks",
+  "dependencies": {
+    "benchmark": "^1.0.0",
+    "lodash": "^2.4.1",
+    "microtime": "^1.0.1",
+    "underscore": "^1.6.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/majimboo/benchmarks.git"
+  },
+  "author": "Majid Arif Siddiqui <me@majidarif.com> (http://blog.majidarif.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/majimboo/benchmarks/issues"
+  },
+  "homepage": "https://github.com/majimboo/benchmarks"
+}
