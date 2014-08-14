@@ -53,5 +53,5 @@ Removing Duplicates
 -------------------
 **winner**: `eliminateDuplicates`
 
-    filterDuplicates    x 105,630 ops/sec ±0.69% (98 runs sampled)
-    eliminateDuplicates x 187,981 ops/sec ±0.30% (102 runs sampled)
+    filterDuplicates    x 105,623 ops/sec ±0.69% (99 runs sampled)
+    eliminateDuplicates x 200,035 ops/sec ±0.40% (92 runs sampled)

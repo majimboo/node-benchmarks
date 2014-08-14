@@ -37,7 +37,7 @@ function eliminateDuplicates(names) {
     _results = [];
     for (index = _i = 0, _len = arr.length; _i < _len; index = ++_i) {
       value = arr[index];
-      _results.push(value + index);
+      _results.push(value);
     }
     return _results;
   }
