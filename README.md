@@ -91,7 +91,7 @@ Conditional
 
 Buffer Read
 -----------
-### v0.10.28
+#### v0.10.28
 **winner**: `buf.myRead noAssert`
 
     buf.read            x 5,424,015 ops/sec ±0.66% (98 runs sampled)
@@ -99,7 +99,7 @@ Buffer Read
     buf.read noAssert   x 6,429,110 ops/sec ±1.52% (88 runs sampled)
     buf.myRead noAssert x 13,446,628 ops/sec ±0.97% (86 runs sampled)
 
-### master branch
+#### master
 **winner**: `buf.myRead noAssert`
 
     buf.read            x 25,522,856 ops/sec ±0.24% (97 runs sampled)
