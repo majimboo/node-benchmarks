@@ -55,3 +55,45 @@ Removing Duplicates
 
     filterDuplicates    x 105,623 ops/sec ±0.69% (99 runs sampled)
     eliminateDuplicates x 200,035 ops/sec ±0.40% (92 runs sampled)
+
+Type Checking
+-------------
+**winner**: `typeof`
+
+    typeof            x 108,848,113 ops/sec ±1.46% (89 runs sampled)
+    constructor check x 5,825,228   ops/sec ±0.41% (94 runs sampled)
+
+String Search
+-------------
+**winner**: `regex#test precompiled`
+
+    regex#test             x 18,294,501 ops/sec ±1.06% (95 runs sampled)
+    string#search          x 13,606,419 ops/sec ±0.93% (92 runs sampled)
+    string#match           x 8,986,226 ops/sec ±1.07% (88 runs sampled)
+    string#indexOf         x 2,439,169 ops/sec ±1.09% (88 runs sampled)
+    regex#test precompiled x 19,661,100 ops/sec ±0.76% (78 runs sampled)
+
+Function Call
+-------------
+**winner**: `direct`
+
+    direct x 94,774,461 ops/sec ±1.87% (90 runs sampled)
+    apply  x 21,099,674 ops/sec ±0.64% (90 runs sampled)
+    call   x 51,467,089 ops/sec ±1.11% (77 runs sampled)
+
+Conditional
+-----------
+**winner**: `if else`
+
+    if else      x 56,343,321 ops/sec ±1.46% (91 runs sampled)
+    switch       x 24,884,543 ops/sec ±0.64% (92 runs sampled)
+    lookup table x 37,565,926 ops/sec ±0.54% (92 runs sampled)
+
+Buffer Read
+-----------
+**winner**: `buf.myRead noAssert`
+
+    buf.read            x 6,316,205  ops/sec ±0.30% (101 runs sampled)
+    buf.myRead          x 8,652,745  ops/sec ±0.21% (100 runs sampled)
+    buf.read noAssert   x 7,642,126  ops/sec ±0.44% (96 runs sampled)
+    buf.myRead noAssert x 14,967,410 ops/sec ±0.50% (95 runs sampled)
