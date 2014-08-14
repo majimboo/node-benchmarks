@@ -60,9 +60,9 @@ Buffer.prototype.myReadInt32LE = function(offset, noAssert) {
   }
 
   var val = this[offset];
-  val |= this[offset+1] << 8;
-  val |= this[offset+2] << 16;
-  val |= this[offset+3] << 24;
+  val |= this[offset + 1] << 8;
+  val |= this[offset + 2] << 16;
+  val |= this[offset + 3] << 24;
   val >>>= 0;
   return (val + 0x80000000) % 0x100000000 - 0x80000000;
 };
@@ -76,8 +76,8 @@ Buffer.prototype.myReadUInt16BE = function(offset, noAssert) {
     checkOffset(offset, 2, this.length);
   }
 
-  var val = this[offset++] << 8;
-  val |= this[offset++];
+  var val = this[offset] << 8;
+  val |= this[offset + 1];
   val >>>= 0;
   return val;
 };
@@ -90,9 +90,9 @@ Buffer.prototype.myReadUInt32BE = function(offset, noAssert) {
   }
 
   var val = this[offset] << 24;
-  val |= this[offset+1] << 16;
-  val |= this[offset+2] << 8;
-  val |= this[offset+3];
+  val |= this[offset + 1] << 16;
+  val |= this[offset + 2] << 8;
+  val |= this[offset + 3];
   val >>>= 0;
   return val;
 };
@@ -104,8 +104,8 @@ Buffer.prototype.myReadInt16BE = function(offset, noAssert) {
     checkOffset(offset, 2, this.length);
   }
 
-  var val = this[offset++] << 8;
-  val |= this[offset++];
+  var val = this[offset] << 8;
+  val |= this[offset + 1];
   val >>>= 0;
   return (val + 0x8000) % 0x10000 - 0x8000;
 };
@@ -118,9 +118,9 @@ Buffer.prototype.myReadInt32BE = function(offset, noAssert) {
   }
 
   var val = this[offset] << 24;
-  val |= this[offset+1] << 16;
-  val |= this[offset+2] << 8;
-  val |= this[offset+3];
+  val |= this[offset + 1] << 16;
+  val |= this[offset + 2] << 8;
+  val |= this[offset + 3];
   val >>>= 0;
   return (val + 0x80000000) % 0x100000000 - 0x80000000;
 };
