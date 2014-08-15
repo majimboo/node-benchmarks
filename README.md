@@ -25,7 +25,7 @@ String to Integer
     a / 1          x 21,630,212 ops/sec ±0.91% (95 runs sampled)
     a % Infinity   x 14,162,057 ops/sec ±0.58% (86 runs sampled)
     a >> 0         x 23,309,153 ops/sec ±1.12% (88 runs sampled)
-    eval(a)        x 5,536,882  ops/sec ±0.56% (92 runs sampled)
+    eval(a)        x  5,536,882 ops/sec ±0.56% (92 runs sampled)
     a ^ 0          x 23,444,139 ops/sec ±0.68% (90 runs sampled)
 
 Rounding Numbers
@@ -40,7 +40,7 @@ Rounding Numbers
     a | 0          x 74,004,737 ops/sec ±1.90% (78 runs sampled)
     a & a          x 74,687,728 ops/sec ±0.71% (93 runs sampled)
     a << 0         x 82,201,053 ops/sec ±1.27% (86 runs sampled)
-    Int#toFixed    x 2,911,860  ops/sec ±0.69% (93 runs sampled)
+    Int#toFixed    x  2,911,860 ops/sec ±0.69% (93 runs sampled)
     modulo         x 77,863,883 ops/sec ±1.04% (91 runs sampled)
 
 Object Loop
@@ -71,7 +71,7 @@ Type Checking
 **winner**: [`typeof`](https://github.com/majimboo/benchmarks/blob/master/javascript/type_check.js#L12)
 
     typeof            x 108,848,113 ops/sec ±1.46% (89 runs sampled)
-    constructor check x 5,825,228   ops/sec ±0.41% (94 runs sampled)
+    constructor check x   5,825,228 ops/sec ±0.41% (94 runs sampled)
 
 String Search
 -------------
@@ -79,8 +79,8 @@ String Search
 
     regex#test             x 18,294,501 ops/sec ±1.06% (95 runs sampled)
     string#search          x 13,606,419 ops/sec ±0.93% (92 runs sampled)
-    string#match           x 8,986,226 ops/sec ±1.07% (88 runs sampled)
-    string#indexOf         x 2,439,169 ops/sec ±1.09% (88 runs sampled)
+    string#match           x  8,986,226 ops/sec ±1.07% (88 runs sampled)
+    string#indexOf         x  2,439,169 ops/sec ±1.09% (88 runs sampled)
     regex#test precompiled x 19,661,100 ops/sec ±0.76% (78 runs sampled)
 
 Function Call
@@ -104,13 +104,13 @@ Buffer Read
 #### v0.10.28
 **winner**: [`plainArray noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_read.js#L314)
 
-    buf.read             x 6,362,362  ops/sec ±0.38% (102 runs sampled)
-    buf.myRead           x 8,482,843  ops/sec ±0.97% (99 runs sampled)
-    buf.read noAssert    x 7,280,957  ops/sec ±0.81% (98 runs sampled)
+    buf.read             x  6,362,362 ops/sec ±0.38% (102 runs sampled)
+    buf.myRead           x  8,482,843 ops/sec ±0.97% (99 runs sampled)
+    buf.read noAssert    x  7,280,957 ops/sec ±0.81% (98 runs sampled)
     buf.myRead noAssert  x 14,294,096 ops/sec ±1.03% (90 runs sampled)
     plainArray           x 11,118,551 ops/sec ±0.49% (97 runs sampled)
     plainArray noAssert  x 14,853,070 ops/sec ±0.55% (98 runs sampled)
-    ArrayBuffer DataView x 2,708,288  ops/sec ±1.01% (100 runs sampled)
+    ArrayBuffer DataView x  2,708,288 ops/sec ±1.01% (100 runs sampled)
 
 #### master
 **winner**: [`buf.myRead noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_read.js#L165)
