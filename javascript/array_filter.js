@@ -2,6 +2,7 @@
 
 var Benchmark  = require('benchmark');
 var suite      = new Benchmark.Suite;
+
 var underscore = require('underscore');
 var lodash     = require('lodash');
 

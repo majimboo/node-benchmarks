@@ -51,9 +51,19 @@ Object Loop
     forEach Object#keys    x 1,962,596 ops/sec ±0.21% (100 runs sampled)
     for Object#keys.length x 3,286,807 ops/sec ±0.39% (97 runs sampled)
 
+Map
+---
+**winner** [`for loop (with fn call)`](https://github.com/majimboo/benchmarks/blob/master/javascript/map.js#L32)
+
+    comprehension           x 144,778 ops/sec ±0.23% (101 runs sampled)
+    for loop (with fn call) x 146,560 ops/sec ±0.39% (101 runs sampled)
+    Array#map               x  25,998 ops/sec ±0.61% (91 runs sampled)
+    underscore#map          x  25,983 ops/sec ±0.54% (100 runs sampled)
+    lodash#map              x  69,199 ops/sec ±0.35% (97 runs sampled)
+
 Array Filter
 ------------
-**winner**: [`lodash#filter`](https://github.com/majimboo/benchmarks/blob/master/javascript/array_filter.js#L21)
+**winner**: [`lodash#filter`](http://lodash.com/docs#filter)
 
     Array#filter      x 364,000 ops/sec ±1.86% (81 runs sampled)
     underscore#filter x 360,219 ops/sec ±1.70% (91 runs sampled)
@@ -128,3 +138,10 @@ Buffer Write
     buf.myWrite          x 24,109,185 ops/sec ±0.42% (92 runs sampled)
     buf.write noAssert   x 34,191,147 ops/sec ±0.33% (95 runs sampled)
     buf.myWrite noAssert x 34,603,573 ops/sec ±0.55% (92 runs sampled)
+
+Promises
+--------
+**winner**: [`bluebird`](https://www.npmjs.org/package/bluebird)
+
+    bluebird x 1,018,344 ops/sec ±3.60% (42 runs sampled)
+    q        x   118,894 ops/sec ±4.52% (76 runs sampled)
