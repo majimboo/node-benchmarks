@@ -51,9 +51,27 @@ Object Loop
     forEach Object#keys    x 1,962,596 ops/sec ±0.21% (100 runs sampled)
     for Object#keys.length x 3,286,807 ops/sec ±0.39% (97 runs sampled)
 
-Map
----
-**winner** [`for loop (with fn call)`](https://github.com/majimboo/benchmarks/blob/master/javascript/map.js#L32)
+Array Each
+----------
+**winner**: [`pop`](https://github.com/majimboo/benchmarks/blob/master/javascript/array_loop.js#L100)
+
+    For loop, basic    x    686,365 ops/sec ±0.74% (97 runs sampled)
+    underscore#each    x     28,945 ops/sec ±0.90% (96 runs sampled)
+    lodash#each        x     89,912 ops/sec ±1.55% (89 runs sampled)
+    While loop, basic  x    684,045 ops/sec ±0.80% (88 runs sampled)
+    For loop, cached   x    699,538 ops/sec ±0.50% (98 runs sampled)
+    For loop, i--      x    109,016 ops/sec ±0.50% (84 runs sampled)
+    Do-while loop, i-- x    214,619 ops/sec ±1.21% (96 runs sampled)
+    Do-while loop, --i x    104,781 ops/sec ±1.18% (95 runs sampled)
+    For..in loop       x     12,196 ops/sec ±0.39% (102 runs sampled)
+    Array#forEach      x     26,501 ops/sec ±0.92% (98 runs sampled)
+    order              x 30,312,890 ops/sec ±2.03% (90 runs sampled)
+    order validation   x 30,987,824 ops/sec ±0.87% (93 runs sampled)
+    pop                x 59,243,416 ops/sec ±1.10% (86 runs sampled)
+
+Array Map
+---------
+**winner**: [`for loop (with fn call)`](https://github.com/majimboo/benchmarks/blob/master/javascript/array_map.js#L32)
 
     comprehension           x 144,778 ops/sec ±0.23% (101 runs sampled)
     for loop (with fn call) x 146,560 ops/sec ±0.39% (101 runs sampled)
