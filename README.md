@@ -56,8 +56,6 @@ Array Each
 **winner**: [`pop`](https://github.com/majimboo/benchmarks/blob/master/javascript/array_loop.js#L100)
 
     For loop, basic    x    686,365 ops/sec ±0.74% (97 runs sampled)
-    underscore#each    x     28,945 ops/sec ±0.90% (96 runs sampled)
-    lodash#each        x     89,912 ops/sec ±1.55% (89 runs sampled)
     While loop, basic  x    684,045 ops/sec ±0.80% (88 runs sampled)
     For loop, cached   x    699,538 ops/sec ±0.50% (98 runs sampled)
     For loop, i--      x    109,016 ops/sec ±0.50% (84 runs sampled)
@@ -65,6 +63,8 @@ Array Each
     Do-while loop, --i x    104,781 ops/sec ±1.18% (95 runs sampled)
     For..in loop       x     12,196 ops/sec ±0.39% (102 runs sampled)
     Array#forEach      x     26,501 ops/sec ±0.92% (98 runs sampled)
+    underscore#each    x     28,945 ops/sec ±0.90% (96 runs sampled)
+    lodash#each        x     89,912 ops/sec ±1.55% (89 runs sampled)
     order              x 30,312,890 ops/sec ±2.03% (90 runs sampled)
     order validation   x 30,987,824 ops/sec ±0.87% (93 runs sampled)
     pop                x 59,243,416 ops/sec ±1.10% (86 runs sampled)
@@ -129,7 +129,6 @@ Conditional
 
 Buffer Read
 -----------
-#### v0.10.28
 **winner**: [`plainArray noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_read.js#L314)
 
     buf.read             x  6,362,362 ops/sec ±0.38% (102 runs sampled)
@@ -139,14 +138,6 @@ Buffer Read
     plainArray           x 11,118,551 ops/sec ±0.49% (97 runs sampled)
     plainArray noAssert  x 14,853,070 ops/sec ±0.55% (98 runs sampled)
     ArrayBuffer DataView x  2,708,288 ops/sec ±1.01% (100 runs sampled)
-
-#### master
-**winner**: [`buf.myRead noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_read.js#L165)
-
-    buf.read            x 25,522,856 ops/sec ±0.24% (97 runs sampled)
-    buf.myRead          x 14,248,629 ops/sec ±0.40% (92 runs sampled)
-    buf.read noAssert   x 59,399,012 ops/sec ±0.92% (92 runs sampled)
-    buf.myRead noAssert x 73,622,213 ops/sec ±1.18% (94 runs sampled)
 
 Buffer Write
 ------------

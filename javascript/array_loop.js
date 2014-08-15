@@ -23,18 +23,6 @@ suite
   }
 })
 
-.add('underscore#each', function() {
-  underscore.each(arr, function (item) {
-    someFn(item);
-  });
-})
-
-.add('lodash#each', function() {
-  lodash.each(arr, function (item) {
-    someFn(item);
-  });
-})
-
 .add('While loop, basic', function() {
   var i = 0;
   while (i < arr.length) {
@@ -82,6 +70,18 @@ suite
 .add('Array#forEach', function() {
   arr.forEach(function (v){
     someFn(v);
+  });
+})
+
+.add('underscore#each', function() {
+  underscore.each(arr, function (item) {
+    someFn(item);
+  });
+})
+
+.add('lodash#each', function() {
+  lodash.each(arr, function (item) {
+    someFn(item);
   });
 })
 
