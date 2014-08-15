@@ -3,7 +3,7 @@ Node.JS
 
 String to Integer
 -----------------
-**winner**: `parseInt(a,10)`
+**winner**: [`parseInt(a,10)`](https://github.com/majimboo/benchmarks/blob/master/javascript/str_to_int.js#L13)
 
     parseInt       x 40,305,021 ops/sec ±0.81% (95 runs sampled)
     parseInt(a,10) x 46,662,459 ops/sec ±1.48% (86 runs sampled)
@@ -20,7 +20,7 @@ String to Integer
 
 Rounding Numbers
 ----------------
-**winner**: `Math#floor`
+**winner**: [`Math#floor`](https://github.com/majimboo/benchmarks/blob/master/javascript/round_num.js#L10)
 
     Math#floor     x 91,614,523 ops/sec ±0.97% (96 runs sampled)
     parseInt       x 38,430,130 ops/sec ±0.91% (87 runs sampled)
@@ -35,7 +35,7 @@ Rounding Numbers
 
 Object Loop
 -----------
-**winner**: `for Object#keys.length`
+**winner**: [`for Object#keys.length`](https://github.com/majimboo/benchmarks/blob/master/javascript/object_loop.js#L55)
 
     prop in Object         x 1,231,135 ops/sec ±0.25% (97 runs sampled)
     forEach Object#keys    x 1,962,596 ops/sec ±0.21% (100 runs sampled)
@@ -43,7 +43,7 @@ Object Loop
 
 Array Filter
 ------------
-**winner**: `lodash#filter`
+**winner**: [`lodash#filter`](https://github.com/majimboo/benchmarks/blob/master/javascript/array_filter.js#L21)
 
     Array#filter      x 364,000 ops/sec ±1.86% (81 runs sampled)
     underscore#filter x 360,219 ops/sec ±1.70% (91 runs sampled)
@@ -51,21 +51,21 @@ Array Filter
 
 Removing Duplicates
 -------------------
-**winner**: `eliminateDuplicates`
+**winner**: [`eliminateDuplicates`](https://github.com/majimboo/benchmarks/blob/master/javascript/duplicate.js#L63)
 
     filterDuplicates    x 105,623 ops/sec ±0.69% (99 runs sampled)
     eliminateDuplicates x 200,035 ops/sec ±0.40% (92 runs sampled)
 
 Type Checking
 -------------
-**winner**: `typeof`
+**winner**: [`typeof`](https://github.com/majimboo/benchmarks/blob/master/javascript/type_check.js#L12)
 
     typeof            x 108,848,113 ops/sec ±1.46% (89 runs sampled)
     constructor check x 5,825,228   ops/sec ±0.41% (94 runs sampled)
 
 String Search
 -------------
-**winner**: `regex#test precompiled`
+**winner**: [`regex#test precompiled`](https://github.com/majimboo/benchmarks/blob/master/javascript/string_search.js#L28)
 
     regex#test             x 18,294,501 ops/sec ±1.06% (95 runs sampled)
     string#search          x 13,606,419 ops/sec ±0.93% (92 runs sampled)
@@ -75,7 +75,7 @@ String Search
 
 Function Call
 -------------
-**winner**: `direct`
+**winner**: [`direct`](https://github.com/majimboo/benchmarks/blob/master/javascript/function_call.js#L15)
 
     direct x 94,774,461 ops/sec ±1.87% (90 runs sampled)
     apply  x 21,099,674 ops/sec ±0.64% (90 runs sampled)
@@ -83,7 +83,7 @@ Function Call
 
 Conditional
 -----------
-**winner**: `if else`
+**winner**: [`if else`](https://github.com/majimboo/benchmarks/blob/master/javascript/conditional.js#L7)
 
     if else      x 56,343,321 ops/sec ±1.46% (91 runs sampled)
     switch       x 24,884,543 ops/sec ±0.64% (92 runs sampled)
@@ -92,15 +92,15 @@ Conditional
 Buffer Read
 -----------
 #### v0.10.28
-**winner**: `buf.myRead noAssert`
+**winner**: [`buf.myRead noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_read.js#L165)
 
-    buf.read            x 5,424,015 ops/sec ±0.66% (98 runs sampled)
-    buf.myRead          x 7,711,931 ops/sec ±0.48% (91 runs sampled)
-    buf.read noAssert   x 6,429,110 ops/sec ±1.52% (88 runs sampled)
+    buf.read            x 5,424,015  ops/sec ±0.66% (98 runs sampled)
+    buf.myRead          x 7,711,931  ops/sec ±0.48% (91 runs sampled)
+    buf.read noAssert   x 6,429,110  ops/sec ±1.52% (88 runs sampled)
     buf.myRead noAssert x 13,446,628 ops/sec ±0.97% (86 runs sampled)
 
 #### master
-**winner**: `buf.myRead noAssert`
+**winner**: [`buf.myRead noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_read.js#L165)
 
     buf.read            x 25,522,856 ops/sec ±0.24% (97 runs sampled)
     buf.myRead          x 14,248,629 ops/sec ±0.40% (92 runs sampled)
@@ -109,7 +109,7 @@ Buffer Read
 
 Buffer Write
 ------------
-**winner**: `buf.myWrite noAssert`
+**winner**: [`buf.myWrite noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_write.js#L63)
 
     buf.write            x 17,435,868 ops/sec ±0.28% (100 runs sampled)
     buf.myWrite          x 24,109,185 ops/sec ±0.42% (92 runs sampled)
