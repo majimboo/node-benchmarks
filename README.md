@@ -92,12 +92,15 @@ Conditional
 Buffer Read
 -----------
 #### v0.10.28
-**winner**: [`buf.myRead noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_read.js#L165)
+**winner**: [`plainArray noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_read.js#L314)
 
-    buf.read            x 5,424,015  ops/sec ±0.66% (98 runs sampled)
-    buf.myRead          x 7,711,931  ops/sec ±0.48% (91 runs sampled)
-    buf.read noAssert   x 6,429,110  ops/sec ±1.52% (88 runs sampled)
-    buf.myRead noAssert x 13,446,628 ops/sec ±0.97% (86 runs sampled)
+    buf.read             x 6,362,362  ops/sec ±0.38% (102 runs sampled)
+    buf.myRead           x 8,482,843  ops/sec ±0.97% (99 runs sampled)
+    buf.read noAssert    x 7,280,957  ops/sec ±0.81% (98 runs sampled)
+    buf.myRead noAssert  x 14,294,096 ops/sec ±1.03% (90 runs sampled)
+    plainArray           x 11,118,551 ops/sec ±0.49% (97 runs sampled)
+    plainArray noAssert  x 14,853,070 ops/sec ±0.55% (98 runs sampled)
+    ArrayBuffer DataView x 2,708,288  ops/sec ±1.01% (100 runs sampled)
 
 #### master
 **winner**: [`buf.myRead noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_read.js#L165)
