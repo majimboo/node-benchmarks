@@ -1,6 +1,14 @@
 Node.JS
 =======
 
+Finding Strings
+---------------
+**winner**: [`String#indexOf`](http://benchmarkjs.com)
+
+    RegExp#test    x 15,928,875 ops/sec ±0.53% (98 runs sampled)
+    String#indexOf x 25,304,964 ops/sec ±0.76% (98 runs sampled)
+    String#match   x 11,126,900 ops/sec ±0.36% (100 runs sampled)
+
 String to Integer
 -----------------
 **winner**: [`parseInt(a,10)`](https://github.com/majimboo/benchmarks/blob/master/javascript/str_to_int.js#L13)
