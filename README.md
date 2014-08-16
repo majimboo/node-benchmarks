@@ -1,7 +1,7 @@
 Node.JS
 =======
 
-> version 0.10.28
+> version 0.11.13
 
 Finding Strings
 ---------------
@@ -113,11 +113,12 @@ String Search
 
 Function Call
 -------------
-**winner**: [`direct`](https://github.com/majimboo/benchmarks/blob/master/javascript/function_call.js#L15)
+**winner**: [`direct`](https://github.com/majimboo/benchmarks/blob/master/javascript/function_call.js#L35)
 
-    direct x 94,774,461 ops/sec ±1.87% (90 runs sampled)
-    apply  x 21,099,674 ops/sec ±0.64% (90 runs sampled)
-    call   x 51,467,089 ops/sec ±1.11% (77 runs sampled)
+    apply  x    388,933 ops/sec ±2.92% (86 runs sampled)
+    call   x 19,006,703 ops/sec ±0.35% (100 runs sampled)
+    bind   x    505,698 ops/sec ±2.19% (86 runs sampled)
+    direct x 30,237,021 ops/sec ±0.26% (97 runs sampled)
 
 Conditional
 -----------

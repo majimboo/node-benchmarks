@@ -6,24 +6,37 @@ var underscore = require('underscore');
 var lodash     = require('lodash');
 
 // init
-var f = function() {
-  return this;
+var f = function(v) {
+  return v;
+};
+
+var y = function(v, callback) {
+  callback(v);
 };
 
 // add tests
 suite
-.add('direct', function() {
-  f();
-})
-
 .add('apply', function() {
-  f.apply(this);
+  y('apply', function(v) {
+    f.apply(this, [v]);
+  });
 })
 
 .add('call', function() {
-  f.call(this);
+  y('call', function(v) {
+    f.call(this, v);
+  });
 })
 
+.add('bind', function() {
+  y('bind', f.bind(this));
+})
+
+.add('direct', function() {
+  y('callback', function(v) {
+    f(v);
+  });
+})
 
 // add listeners
 .on('cycle', function(event) {
