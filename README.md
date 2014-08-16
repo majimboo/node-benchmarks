@@ -155,3 +155,17 @@ Promises
 
     bluebird x 1,018,344 ops/sec ±3.60% (42 runs sampled)
     q        x   118,894 ops/sec ±4.52% (76 runs sampled)
+
+Sending Network Data
+--------------------
+**winner**: [`string`](https://github.com/majimboo/benchmarks/blob/master/javascript/send_buf.js#L52)
+
+    buffer  x  78,850 ops/sec ±11.94% (67 runs sampled)
+    string+ x 973,297 ops/sec ±20.93% (59 runs sampled)
+
+Manipulate Received Network Data
+--------------------------------
+**winner**: [`string`](https://github.com/majimboo/benchmarks/blob/master/javascript/manip_recv_buf.js#L68)
+
+    buffer x  86,935 ops/sec ±13.29% (64 runs sampled)
+    string x 964,895 ops/sec ±25.18% (64 runs sampled)
