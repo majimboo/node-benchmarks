@@ -49,7 +49,7 @@ suite
   socket.write(buf, 'binary');
 })
 
-.add('string+', function() {
+.add('string', function() {
   var str = '\x00\x01\x02\x03\x04\x05';
   var arr = strToInt(str);
 
@@ -61,7 +61,7 @@ suite
   socket.write(mockbuf, 'utf8');
 })
 
-// .add('string', function() {
+// .add('string+', function() {
 //   var str = '\x00\x01\x02\x03\x04\x05';
 //   var arr = strToInt(str);
 

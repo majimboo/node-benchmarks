@@ -45,7 +45,11 @@ function bufToInt(buf) {
   return arr;
 }
 
-var recv_buf = new Buffer([0x05, 0x04, 0x03, 0x02, 0x01, 0x00]);
+var someArr = [];
+for (var i = 0; i < 200; i++) {
+  someArr.push(i);
+}
+var recv_buf = new Buffer(someArr);
 
 // add tests
 suite
@@ -65,9 +69,10 @@ suite
   socket.write(new Buffer(result));
 })
 
-.add('string', function() {
+.add('string+', function() {
   // treat recv buffer as int arr
-  var buf = bufToInt(recv_buf); // try recv_buf.toJSON()
+  var buf = bufToInt(recv_buf);
+  // var buf = recv_buf.toJSON().data;
   var len = buf.length;
 
   for (var i = 0; i < len; i++) {
@@ -77,7 +82,7 @@ suite
   // prepend size
   buf.unshift(len + 1);
 
-  var mockbuf = intToStrN(buf);
+  var mockbuf = intToStr(buf);
   socket.write(mockbuf, 'utf8');
 })
 

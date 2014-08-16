@@ -160,12 +160,12 @@ Sending Network Data
 --------------------
 **winner**: [`string`](https://github.com/majimboo/benchmarks/blob/master/javascript/send_buf.js#L52)
 
-    buffer  x  78,850 ops/sec ±11.94% (67 runs sampled)
-    string+ x 973,297 ops/sec ±20.93% (59 runs sampled)
+    buffer x  78,850 ops/sec ±11.94% (67 runs sampled)
+    string x 973,297 ops/sec ±20.93% (59 runs sampled)
 
-Manipulate Received Network Data
---------------------------------
-**winner**: [`string`](https://github.com/majimboo/benchmarks/blob/master/javascript/manip_recv_buf.js#L68)
+Manipulate 200 bit Buffer
+-------------------------
+**winner**: [`string`](https://github.com/majimboo/benchmarks/blob/master/javascript/manip_recv_buf.js#L72)
 
-    buffer x  86,935 ops/sec ±13.29% (64 runs sampled)
-    string x 964,895 ops/sec ±25.18% (64 runs sampled)
+    buffer  x  48,239 ops/sec ±2.28% (85 runs sampled)
+    string+ x 245,581 ops/sec ±7.55% (84 runs sampled)
