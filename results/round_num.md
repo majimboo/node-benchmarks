@@ -1,0 +1,11 @@
+Math#floor x 31,040,371 ops/sec ±12.39% (45 runs sampled)
+parseInt x 15,537,049 ops/sec ±9.95% (45 runs sampled)
+parseInt(a,10) x 23,436,154 ops/sec ±6.82% (51 runs sampled)
+~~a x 45,444,297 ops/sec ±5.31% (63 runs sampled)
+a | a x 57,643,341 ops/sec ±3.80% (80 runs sampled)
+a | 0 x 69,980,823 ops/sec ±1.52% (86 runs sampled)
+a & a x 68,593,002 ops/sec ±1.59% (91 runs sampled)
+a << 0 x 70,059,355 ops/sec ±0.95% (88 runs sampled)
+Int#toFixed x 2,799,794 ops/sec ±1.45% (92 runs sampled)
+modulo x 77,771,014 ops/sec ±1.22% (90 runs sampled)
+Fastest is modulo

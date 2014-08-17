@@ -1,0 +1,13 @@
+parseInt x 13,884,854 ops/sec ±11.34% (40 runs sampled)
+parseInt(a,10) x 15,683,328 ops/sec ±9.16% (36 runs sampled)
+Math#floor x 39,371,173 ops/sec ±7.18% (54 runs sampled)
++a x 11,758,581 ops/sec ±5.69% (64 runs sampled)
+~~a x 16,028,453 ops/sec ±4.40% (74 runs sampled)
+a | 0 x 20,290,690 ops/sec ±1.41% (91 runs sampled)
+a * 1 x 19,392,341 ops/sec ±1.41% (95 runs sampled)
+a / 1 x 19,234,074 ops/sec ±1.08% (93 runs sampled)
+a % Infinity x 11,350,103 ops/sec ±1.01% (96 runs sampled)
+a >> 0 x 19,756,034 ops/sec ±0.97% (95 runs sampled)
+eval(a) x 4,983,036 ops/sec ±1.28% (97 runs sampled)
+a ^ 0 x 20,274,259 ops/sec ±0.84% (94 runs sampled)
+Fastest is Math#floor

@@ -5,9 +5,9 @@ var suite      = new Benchmark.Suite;
 
 var net = require('net');
 
-var server = net.createServer().listen(8888);
+var server = net.createServer().listen(9999);
 var socket = new net.Socket();
-socket.connect(8888);
+socket.connect(9999);
 
 function strToInt(string) {
   var len = string.length;
