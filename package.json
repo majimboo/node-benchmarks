@@ -19,12 +19,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/majimboo/benchmarks.git"
+    "url": "https://github.com/majimboo/node_benchmarks.git"
   },
   "author": "Majid Arif Siddiqui <me@majidarif.com> (http://blog.majidarif.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/majimboo/benchmarks/issues"
+    "url": "https://github.com/majimboo/node_benchmarks/issues"
   },
-  "homepage": "https://github.com/majimboo/benchmarks"
+  "homepage": "https://github.com/majimboo/node_benchmarks"
 }

@@ -1,171 +1,21 @@
-Node.JS
-=======
+Node.JS Benchmarks
+==================
 
-> version 0.11.13
+Javascript is a non-opinionated language and allows you to do operations in many ways.
+This benchmark results try to find which approach are faster in a range of different systems.
 
-Finding Strings
----------------
-**winner**: [`String#indexOf`](http://benchmarkjs.com)
+Install
+-------
 
-    RegExp#test    x 15,928,875 ops/sec ±0.53% (98 runs sampled)
-    String#indexOf x 25,304,964 ops/sec ±0.76% (98 runs sampled)
-    String#match   x 11,126,900 ops/sec ±0.36% (100 runs sampled)
+    $ git clone https://github.com/majimboo/node_benchmarks
+    $ cd node_benchmarks
+    $ npm install
 
-String to Integer
------------------
-**winner**: [`parseInt(a,10)`](https://github.com/majimboo/benchmarks/blob/master/javascript/str_to_int.js#L13)
+Use
+---
 
-    parseInt       x 40,305,021 ops/sec ±0.81% (95 runs sampled)
-    parseInt(a,10) x 46,662,459 ops/sec ±1.48% (86 runs sampled)
-    Math#floor     x 27,024,369 ops/sec ±0.98% (85 runs sampled)
-    +a             x 21,231,481 ops/sec ±0.95% (96 runs sampled)
-    ~~a            x 22,256,226 ops/sec ±0.99% (88 runs sampled)
-    a | 0          x 23,038,167 ops/sec ±1.20% (86 runs sampled)
-    a * 1          x 22,416,100 ops/sec ±0.81% (86 runs sampled)
-    a / 1          x 21,630,212 ops/sec ±0.91% (95 runs sampled)
-    a % Infinity   x 14,162,057 ops/sec ±0.58% (86 runs sampled)
-    a >> 0         x 23,309,153 ops/sec ±1.12% (88 runs sampled)
-    eval(a)        x  5,536,882 ops/sec ±0.56% (92 runs sampled)
-    a ^ 0          x 23,444,139 ops/sec ±0.68% (90 runs sampled)
+    $ node benchmark.js
 
-Rounding Numbers
-----------------
-**winner**: [`Math#floor`](https://github.com/majimboo/benchmarks/blob/master/javascript/round_num.js#L10)
+Your new benchmark results will be appended to the result set.
+I recommend you send a pull requests to add your results to this list.
 
-    Math#floor     x 91,614,523 ops/sec ±0.97% (96 runs sampled)
-    parseInt       x 38,430,130 ops/sec ±0.91% (87 runs sampled)
-    parseInt(a,10) x 45,367,806 ops/sec ±0.75% (96 runs sampled)
-    ~~a            x 80,252,961 ops/sec ±1.84% (80 runs sampled)
-    a | a          x 76,177,198 ops/sec ±0.29% (95 runs sampled)
-    a | 0          x 74,004,737 ops/sec ±1.90% (78 runs sampled)
-    a & a          x 74,687,728 ops/sec ±0.71% (93 runs sampled)
-    a << 0         x 82,201,053 ops/sec ±1.27% (86 runs sampled)
-    Int#toFixed    x  2,911,860 ops/sec ±0.69% (93 runs sampled)
-    modulo         x 77,863,883 ops/sec ±1.04% (91 runs sampled)
-
-Object Loop
------------
-**winner**: [`for Object#keys.length`](https://github.com/majimboo/benchmarks/blob/master/javascript/object_loop.js#L55)
-
-    prop in Object         x 1,231,135 ops/sec ±0.25% (97 runs sampled)
-    forEach Object#keys    x 1,962,596 ops/sec ±0.21% (100 runs sampled)
-    for Object#keys.length x 3,286,807 ops/sec ±0.39% (97 runs sampled)
-
-Array Each
-----------
-**winner**: [`pop`](https://github.com/majimboo/benchmarks/blob/master/javascript/array_loop.js#L100)
-
-    For loop, basic    x    686,365 ops/sec ±0.74% (97 runs sampled)
-    While loop, basic  x    684,045 ops/sec ±0.80% (88 runs sampled)
-    For loop, cached   x    699,538 ops/sec ±0.50% (98 runs sampled)
-    For loop, i--      x    109,016 ops/sec ±0.50% (84 runs sampled)
-    Do-while loop, i-- x    214,619 ops/sec ±1.21% (96 runs sampled)
-    Do-while loop, --i x    104,781 ops/sec ±1.18% (95 runs sampled)
-    For..in loop       x     12,196 ops/sec ±0.39% (102 runs sampled)
-    Array#forEach      x     26,501 ops/sec ±0.92% (98 runs sampled)
-    underscore#each    x     28,945 ops/sec ±0.90% (96 runs sampled)
-    lodash#each        x     89,912 ops/sec ±1.55% (89 runs sampled)
-    order              x 30,312,890 ops/sec ±2.03% (90 runs sampled)
-    order validation   x 30,987,824 ops/sec ±0.87% (93 runs sampled)
-    pop                x 59,243,416 ops/sec ±1.10% (86 runs sampled)
-
-Array Map
----------
-**winner**: [`for loop (with fn call)`](https://github.com/majimboo/benchmarks/blob/master/javascript/array_map.js#L32)
-
-    comprehension           x 144,778 ops/sec ±0.23% (101 runs sampled)
-    for loop (with fn call) x 146,560 ops/sec ±0.39% (101 runs sampled)
-    Array#map               x  25,998 ops/sec ±0.61% (91 runs sampled)
-    underscore#map          x  25,983 ops/sec ±0.54% (100 runs sampled)
-    lodash#map              x  69,199 ops/sec ±0.35% (97 runs sampled)
-
-Array Filter
-------------
-**winner**: [`lodash#filter`](http://lodash.com/docs#filter)
-
-    Array#filter      x 364,000 ops/sec ±1.86% (81 runs sampled)
-    underscore#filter x 360,219 ops/sec ±1.70% (91 runs sampled)
-    lodash#filter     x 920,773 ops/sec ±0.39% (99 runs sampled)
-
-Removing Duplicates
--------------------
-**winner**: [`eliminateDuplicates`](https://github.com/majimboo/benchmarks/blob/master/javascript/duplicate.js#L63)
-
-    filterDuplicates    x 105,623 ops/sec ±0.69% (99 runs sampled)
-    eliminateDuplicates x 200,035 ops/sec ±0.40% (92 runs sampled)
-
-Type Checking
--------------
-**winner**: [`typeof`](https://github.com/majimboo/benchmarks/blob/master/javascript/type_check.js#L12)
-
-    typeof            x 108,848,113 ops/sec ±1.46% (89 runs sampled)
-    constructor check x   5,825,228 ops/sec ±0.41% (94 runs sampled)
-
-String Search
--------------
-**winner**: [`regex#test precompiled`](https://github.com/majimboo/benchmarks/blob/master/javascript/string_search.js#L28)
-
-    regex#test             x 18,294,501 ops/sec ±1.06% (95 runs sampled)
-    string#search          x 13,606,419 ops/sec ±0.93% (92 runs sampled)
-    string#match           x  8,986,226 ops/sec ±1.07% (88 runs sampled)
-    string#indexOf         x  2,439,169 ops/sec ±1.09% (88 runs sampled)
-    regex#test precompiled x 19,661,100 ops/sec ±0.76% (78 runs sampled)
-
-Function Call
--------------
-**winner**: [`direct`](https://github.com/majimboo/benchmarks/blob/master/javascript/function_call.js#L35)
-
-    apply  x    388,933 ops/sec ±2.92% (86 runs sampled)
-    call   x 19,006,703 ops/sec ±0.35% (100 runs sampled)
-    bind   x    505,698 ops/sec ±2.19% (86 runs sampled)
-    direct x 30,237,021 ops/sec ±0.26% (97 runs sampled)
-
-Conditional
------------
-**winner**: [`if else`](https://github.com/majimboo/benchmarks/blob/master/javascript/conditional.js#L7)
-
-    if else      x 56,343,321 ops/sec ±1.46% (91 runs sampled)
-    switch       x 24,884,543 ops/sec ±0.64% (92 runs sampled)
-    lookup table x 37,565,926 ops/sec ±0.54% (92 runs sampled)
-
-Buffer Read
------------
-**winner**: [`plainArray noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_read.js#L314)
-
-    buf.read             x  6,362,362 ops/sec ±0.38% (102 runs sampled)
-    buf.myRead           x  8,482,843 ops/sec ±0.97% (99 runs sampled)
-    buf.read noAssert    x  7,280,957 ops/sec ±0.81% (98 runs sampled)
-    buf.myRead noAssert  x 14,294,096 ops/sec ±1.03% (90 runs sampled)
-    plainArray           x 11,118,551 ops/sec ±0.49% (97 runs sampled)
-    plainArray noAssert  x 14,853,070 ops/sec ±0.55% (98 runs sampled)
-    ArrayBuffer DataView x  2,708,288 ops/sec ±1.01% (100 runs sampled)
-
-Buffer Write
-------------
-**winner**: [`buf.myWrite noAssert`](https://github.com/majimboo/benchmarks/blob/master/javascript/buf_write.js#L63)
-
-    buf.write            x 17,435,868 ops/sec ±0.28% (100 runs sampled)
-    buf.myWrite          x 24,109,185 ops/sec ±0.42% (92 runs sampled)
-    buf.write noAssert   x 34,191,147 ops/sec ±0.33% (95 runs sampled)
-    buf.myWrite noAssert x 34,603,573 ops/sec ±0.55% (92 runs sampled)
-
-Promises
---------
-**winner**: [`bluebird`](https://www.npmjs.org/package/bluebird)
-
-    bluebird x 1,018,344 ops/sec ±3.60% (42 runs sampled)
-    q        x   118,894 ops/sec ±4.52% (76 runs sampled)
-
-Sending Network Data
---------------------
-**winner**: [`string`](https://github.com/majimboo/benchmarks/blob/master/javascript/send_buf.js#L52)
-
-    buffer x  78,850 ops/sec ±11.94% (67 runs sampled)
-    string x 973,297 ops/sec ±20.93% (59 runs sampled)
-
-Manipulate 200 bit Buffer
--------------------------
-**winner**: [`string`](https://github.com/majimboo/benchmarks/blob/master/javascript/manip_recv_buf.js#L72)
-
-    buffer  x  48,239 ops/sec ±2.28% (85 runs sampled)
-    string+ x 245,581 ops/sec ±7.55% (84 runs sampled)

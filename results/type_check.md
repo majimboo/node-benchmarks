@@ -1,3 +1,45 @@
-typeof x 30,198,462 ops/sec ±10.31% (46 runs sampled)
-constructor check x 28,848,593 ops/sec ±10.81% (38 runs sampled)
-Fastest is typeof,constructor check
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>typeof</b></td><td>33,107,201 ops/sec ±10.57% (47 runs sampled)
+</td></tr><tr><td><b>constructor check</b></td><td>24,736,012 ops/sec ±8.94% (36 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is typeof
+
+
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>typeof</b></td><td>31,683,969 ops/sec ±11.91% (43 runs sampled)
+</td></tr><tr><td><b>constructor check</b></td><td>33,694,762 ops/sec ±8.75% (51 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is constructor check,typeof
+
+
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>typeof</b></td><td>29,596,721 ops/sec ±10.89% (37 runs sampled)
+</td></tr><tr><td><b>constructor check</b></td><td>30,974,016 ops/sec ±9.36% (46 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is constructor check,typeof
+
+
