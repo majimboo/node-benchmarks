@@ -1,6 +1,8 @@
 Node.JS Benchmarks
 ==================
 
+[![NPM](https://nodei.co/npm/benchmarks.png?downloads=true)](https://nodei.co/npm/benchmarks/)
+
 Javascript is a non-opinionated language and allows you to do an operation in many ways.
 This repository tries to find which approach is faster in a range of different systems.
 
