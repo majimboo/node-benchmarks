@@ -100,3 +100,17 @@ Darwin x64 - 13.3.0
 > - Fastest is prototype
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prototype</b></td><td>5,322,971 ops/sec ±11.51% (43 runs sampled)
+</td></tr><tr><td><b>literal</b></td><td>2,122,148 ops/sec ±9.75% (42 runs sampled)
+</td></tr><tr><td><b>prototype 1M</b></td><td>1.55 ops/sec ±15.26% (8 runs sampled)
+</td></tr><tr><td><b>literal 1M</b></td><td>1.81 ops/sec ±13.87% (9 runs sampled)
+Fastest is prototype
+</td></tr>
+

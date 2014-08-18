@@ -100,3 +100,20 @@ Darwin x64 - 13.3.0
 > - Fastest is direct
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>apply</b></td><td>458,617 ops/sec ±10.33% (44 runs sampled)
+</td></tr><tr><td><b>call</b></td><td>5,416,534 ops/sec ±6.14% (61 runs sampled)
+</td></tr><tr><td><b>bind</b></td><td>118,968 ops/sec ±6.60% (48 runs sampled)
+</td></tr><tr><td><b>direct</b></td><td>6,986,852 ops/sec ±7.70% (58 runs sampled)
+</td></tr>
+
+</table>
+
+> Notes:
+> - Fastest is direct

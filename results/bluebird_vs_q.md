@@ -88,3 +88,15 @@ Darwin x64 - 13.3.0
 > - Fastest is bluebird
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>bluebird</b></td><td>382,465 ops/sec ±14.66% (41 runs sampled)
+</td></tr><tr><td><b>q</b></td><td>43,026 ops/sec ±5.92% (52 runs sampled)
+Fastest is bluebird
+</td></tr>
+

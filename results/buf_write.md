@@ -100,3 +100,17 @@ Darwin x64 - 13.3.0
 > - Fastest is buf.myWrite noAssert
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buf.write</b></td><td>1,811,869 ops/sec ±11.25% (37 runs sampled)
+</td></tr><tr><td><b>buf.myWrite</b></td><td>2,887,810 ops/sec ±10.75% (40 runs sampled)
+</td></tr><tr><td><b>buf.write noAssert</b></td><td>3,880,602 ops/sec ±11.37% (37 runs sampled)
+</td></tr><tr><td><b>buf.myWrite noAssert</b></td><td>5,106,313 ops/sec ±8.85% (46 runs sampled)
+Fastest is buf.myWrite noAssert
+</td></tr>
+

@@ -118,3 +118,23 @@ Darwin x64 - 13.3.0
 > - Fastest is plainArray noAssert
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buf.read</b></td><td>982,244 ops/sec ±7.05% (47 runs sampled)
+</td></tr><tr><td><b>buf.myRead</b></td><td>1,090,597 ops/sec ±9.21% (45 runs sampled)
+</td></tr><tr><td><b>buf.read noAssert</b></td><td>1,237,408 ops/sec ±6.94% (55 runs sampled)
+</td></tr><tr><td><b>buf.myRead noAssert</b></td><td>2,782,009 ops/sec ±8.41% (59 runs sampled)
+</td></tr><tr><td><b>plainArray</b></td><td>4,033,243 ops/sec ±1.76% (82 runs sampled)
+</td></tr><tr><td><b>plainArray noAssert</b></td><td>5,189,949 ops/sec ±2.19% (80 runs sampled)
+</td></tr><tr><td><b>ArrayBuffer DataView</b></td><td>1,022,806 ops/sec ±1.91% (78 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is plainArray noAssert
+
+

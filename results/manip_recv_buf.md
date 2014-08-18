@@ -88,3 +88,15 @@ Darwin x64 - 13.3.0
 > - Fastest is string+,buffer
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buffer</b></td><td>720 ops/sec ±191.03% (41 runs sampled)
+</td></tr><tr><td><b>string+</b></td><td>18,320 ops/sec ±31.02% (32 runs sampled)
+Fastest is string+
+</td></tr>
+
