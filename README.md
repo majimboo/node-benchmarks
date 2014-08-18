@@ -45,3 +45,8 @@ Results
 -------
 
 You can find the result sets [here](https://github.com/majimboo/node_benchmarks/tree/master/results). I recommend you send a pull requests to add your results to this list.
+
+- [Array Filter](https://github.com/majimboo/node-benchmarks/blob/master/results/array_filter.md)
+- [Array Loop](https://github.com/majimboo/node-benchmarks/blob/master/results/array_loop.md)
+- [Array Map](https://github.com/majimboo/node-benchmarks/blob/master/results/array_map.md)
+- [Array Prepend](https://github.com/majimboo/node-benchmarks/blob/master/results/array_prepend.md)
