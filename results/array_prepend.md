@@ -94,3 +94,16 @@ Darwin x64 - 13.3.0
 > - Fastest is unshift
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>unshift</b></td><td>1,472,792 ops/sec ±10.77% (35 runs sampled)
+</td></tr><tr><td><b>prepend fn</b></td><td>811,445 ops/sec ±9.72% (51 runs sampled)
+</td></tr><tr><td><b>unshift no mutate</b></td><td>1,304,188 ops/sec ±8.55% (53 runs sampled)
+Fastest is unshift,unshift no mutate
+</td></tr>
+

@@ -94,3 +94,16 @@ Darwin x64 - 13.3.0
 > - Fastest is for Object#keys.length
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prop in Object</b></td><td>263,970 ops/sec ±8.64% (70 runs sampled)
+</td></tr><tr><td><b>forEach Object#keys</b></td><td>442,728 ops/sec ±6.83% (69 runs sampled)
+</td></tr><tr><td><b>for Object#keys.length</b></td><td>663,769 ops/sec ±6.76% (68 runs sampled)
+Fastest is for Object#keys.length
+</td></tr>
+

@@ -154,3 +154,29 @@ Darwin x64 - 13.3.0
 > - Fastest is pop
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>For loop, basic</b></td><td>156,051 ops/sec ±6.97% (52 runs sampled)
+</td></tr><tr><td><b>While loop, basic</b></td><td>95,731 ops/sec ±9.40% (37 runs sampled)
+</td></tr><tr><td><b>For loop, cached</b></td><td>100,137 ops/sec ±11.41% (34 runs sampled)
+</td></tr><tr><td><b>For loop, i--</b></td><td>16,130 ops/sec ±7.89% (50 runs sampled)
+</td></tr><tr><td><b>Do-while loop, i--</b></td><td>40,769 ops/sec ±7.31% (58 runs sampled)
+</td></tr><tr><td><b>Do-while loop, --i</b></td><td>32,188 ops/sec ±9.87% (70 runs sampled)
+</td></tr><tr><td><b>For..in loop</b></td><td>4,926 ops/sec ±1.85% (65 runs sampled)
+</td></tr><tr><td><b>Array#forEach</b></td><td>10,999 ops/sec ±1.95% (75 runs sampled)
+</td></tr><tr><td><b>underscore#each</b></td><td>11,198 ops/sec ±3.35% (73 runs sampled)
+</td></tr><tr><td><b>lodash#each</b></td><td>37,439 ops/sec ±2.57% (82 runs sampled)
+</td></tr><tr><td><b>order</b></td><td>15,200,523 ops/sec ±3.00% (76 runs sampled)
+</td></tr><tr><td><b>order validation</b></td><td>15,039,158 ops/sec ±2.90% (78 runs sampled)
+</td></tr><tr><td><b>pop</b></td><td>35,750,397 ops/sec ±3.07% (85 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is pop
+
+

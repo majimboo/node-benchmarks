@@ -100,3 +100,17 @@ Darwin x64 - 13.3.0
 > - Fastest is inc fn
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>i++</b></td><td>13,079,803 ops/sec ±15.62% (39 runs sampled)
+</td></tr><tr><td><b>++i</b></td><td>12,327,200 ops/sec ±10.28% (43 runs sampled)
+</td></tr><tr><td><b>i += 1</b></td><td>13,751,957 ops/sec ±10.57% (36 runs sampled)
+</td></tr><tr><td><b>inc fn</b></td><td>10,169,836 ops/sec ±10.80% (40 runs sampled)
+Fastest is i += 1,i++,++i
+</td></tr>
+

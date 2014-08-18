@@ -88,3 +88,18 @@ Darwin x64 - 13.3.0
 > - Fastest is eliminateDuplicates
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>filterDuplicates</b></td><td>10,843 ops/sec ±11.79% (40 runs sampled)
+</td></tr><tr><td><b>eliminateDuplicates</b></td><td>20,676 ops/sec ±9.23% (43 runs sampled)
+</td></tr>
+
+</table>
+
+> Notes:
+> - Fastest is eliminateDuplicates

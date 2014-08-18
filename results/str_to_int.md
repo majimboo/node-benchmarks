@@ -148,3 +148,28 @@ Darwin x64 - 13.3.0
 > - Fastest is a ^ 0
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>parseInt</b></td><td>7,172,996 ops/sec ±15.90% (50 runs sampled)
+</td></tr><tr><td><b>parseInt(a,10)</b></td><td>5,517,263 ops/sec ±10.68% (38 runs sampled)
+</td></tr><tr><td><b>Math#floor</b></td><td>5,846,419 ops/sec ±14.64% (54 runs sampled)
+</td></tr><tr><td><b>+a</b></td><td>10,068,796 ops/sec ±1.85% (76 runs sampled)
+</td></tr><tr><td><b>~~a</b></td><td>11,466,215 ops/sec ±1.34% (87 runs sampled)
+</td></tr><tr><td><b>a | 0</b></td><td>11,050,144 ops/sec ±1.71% (77 runs sampled)
+</td></tr><tr><td><b>a * 1</b></td><td>12,600,096 ops/sec ±3.08% (78 runs sampled)
+</td></tr><tr><td><b>a / 1</b></td><td>11,982,683 ops/sec ±2.72% (75 runs sampled)
+</td></tr><tr><td><b>a % Infinity</b></td><td>7,747,005 ops/sec ±1.93% (80 runs sampled)
+</td></tr><tr><td><b>a >> 0</b></td><td>13,158,110 ops/sec ±3.91% (80 runs sampled)
+</td></tr><tr><td><b>eval(a)</b></td><td>3,518,513 ops/sec ±1.70% (87 runs sampled)
+</td></tr><tr><td><b>a ^ 0</b></td><td>17,925,672 ops/sec ±0.67% (93 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is a ^ 0
+
+

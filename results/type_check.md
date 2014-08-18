@@ -88,3 +88,18 @@ Darwin x64 - 13.3.0
 > - Fastest is typeof
 
 
+Windows_NT x64 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.26</td><td>8.43 GB</td><td>Intel(R) Core(TM) i5-2450M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>typeof</b></td><td>19,389,338 ops/sec ±12.32% (47 runs sampled)
+</td></tr><tr><td><b>constructor check</b></td><td>709,194 ops/sec ±11.70% (41 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is typeof
+
+
