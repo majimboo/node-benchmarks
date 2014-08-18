@@ -50,7 +50,7 @@ glob(path.join(scriptsPath, '*.js'), function (err, files) {
         node.on('exit', function() {
             fs.appendFileSync(resultPath, '\n\n');
             done++;
-            console.log('['+done+'/'+total+']: ' + path.basename(file, '.js'));
+            console.log('['+done+'/'+total+']\t' + path.basename(file, '.js'));
         });
     });
 });

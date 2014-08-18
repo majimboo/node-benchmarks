@@ -49,3 +49,54 @@ Darwin x64 - 13.2.0
 > - Fastest is direct
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>apply</b></td><td>953,333 ops/sec ±13.97% (33 runs sampled)
+</td></tr><tr><td><b>call</b></td><td>7,007,903 ops/sec ±14.27% (34 runs sampled)
+</td></tr><tr><td><b>bind</b></td><td>205,458 ops/sec ±12.00% (41 runs sampled)
+</td></tr><tr><td><b>direct</b></td><td>11,651,766 ops/sec ±9.51% (45 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is direct
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>apply</b></td><td>980,556 ops/sec ±13.67% (31 runs sampled)
+</td></tr><tr><td><b>call</b></td><td>6,613,677 ops/sec ±15.22% (31 runs sampled)
+</td></tr><tr><td><b>bind</b></td><td>198,234 ops/sec ±11.69% (41 runs sampled)
+</td></tr><tr><td><b>direct</b></td><td>11,872,686 ops/sec ±7.49% (44 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is direct
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>apply</b></td><td>868,427 ops/sec ±16.38% (29 runs sampled)
+</td></tr><tr><td><b>call</b></td><td>6,505,381 ops/sec ±12.98% (30 runs sampled)
+</td></tr><tr><td><b>bind</b></td><td>188,570 ops/sec ±10.99% (36 runs sampled)
+</td></tr><tr><td><b>direct</b></td><td>10,984,534 ops/sec ±8.09% (44 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is direct
+
+

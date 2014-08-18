@@ -52,3 +52,57 @@ Darwin x64 - 13.2.0
 > - Fastest is lodash#map
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>CoffeeScript comprehension</b></td><td>35,164 ops/sec ±14.15% (34 runs sampled)
+</td></tr><tr><td><b>for loop (with function call)</b></td><td>38,101 ops/sec ±12.23% (36 runs sampled)
+</td></tr><tr><td><b>Array#map</b></td><td>8,149 ops/sec ±11.72% (44 runs sampled)
+</td></tr><tr><td><b>underscore#map</b></td><td>10,152 ops/sec ±6.26% (45 runs sampled)
+</td></tr><tr><td><b>lodash#map</b></td><td>40,112 ops/sec ±5.39% (63 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#map,for loop (with function call),CoffeeScript comprehension
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>CoffeeScript comprehension</b></td><td>34,189 ops/sec ±13.29% (33 runs sampled)
+</td></tr><tr><td><b>for loop (with function call)</b></td><td>33,370 ops/sec ±12.18% (32 runs sampled)
+</td></tr><tr><td><b>Array#map</b></td><td>8,205 ops/sec ±13.21% (43 runs sampled)
+</td></tr><tr><td><b>underscore#map</b></td><td>10,119 ops/sec ±8.09% (44 runs sampled)
+</td></tr><tr><td><b>lodash#map</b></td><td>36,275 ops/sec ±5.39% (63 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#map,CoffeeScript comprehension,for loop (with function call)
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>CoffeeScript comprehension</b></td><td>29,169 ops/sec ±15.26% (29 runs sampled)
+</td></tr><tr><td><b>for loop (with function call)</b></td><td>36,093 ops/sec ±14.45% (34 runs sampled)
+</td></tr><tr><td><b>Array#map</b></td><td>7,372 ops/sec ±9.79% (36 runs sampled)
+</td></tr><tr><td><b>underscore#map</b></td><td>9,663 ops/sec ±7.03% (44 runs sampled)
+</td></tr><tr><td><b>lodash#map</b></td><td>35,982 ops/sec ±4.93% (59 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#map,for loop (with function call)
+
+

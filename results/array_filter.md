@@ -46,3 +46,51 @@ Darwin x64 - 13.2.0
 > - Fastest is lodash#filter
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Array#filter</b></td><td>80,478 ops/sec ±14.19% (32 runs sampled)
+</td></tr><tr><td><b>underscore#filter</b></td><td>88,593 ops/sec ±13.61% (34 runs sampled)
+</td></tr><tr><td><b>lodash#filter</b></td><td>278,374 ops/sec ±8.71% (41 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#filter
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Array#filter</b></td><td>84,928 ops/sec ±15.18% (32 runs sampled)
+</td></tr><tr><td><b>underscore#filter</b></td><td>84,011 ops/sec ±11.38% (32 runs sampled)
+</td></tr><tr><td><b>lodash#filter</b></td><td>284,938 ops/sec ±11.83% (40 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#filter
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Array#filter</b></td><td>83,897 ops/sec ±15.15% (31 runs sampled)
+</td></tr><tr><td><b>underscore#filter</b></td><td>77,410 ops/sec ±12.66% (30 runs sampled)
+</td></tr><tr><td><b>lodash#filter</b></td><td>263,203 ops/sec ±10.36% (38 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#filter
+
+

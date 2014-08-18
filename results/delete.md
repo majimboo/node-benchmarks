@@ -49,3 +49,54 @@ Darwin x64 - 13.2.0
 > - Fastest is object subscript delete
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>3,071,731 ops/sec ±12.38% (30 runs sampled)
+</td></tr><tr><td><b>object delete</b></td><td>3,237,265 ops/sec ±15.63% (36 runs sampled)
+</td></tr><tr><td><b>array delete</b></td><td>3,589,009 ops/sec ±11.50% (38 runs sampled)
+</td></tr><tr><td><b>object subscript delete</b></td><td>4,914,854 ops/sec ±8.87% (46 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is object subscript delete
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>3,150,726 ops/sec ±18.54% (31 runs sampled)
+</td></tr><tr><td><b>object delete</b></td><td>3,037,786 ops/sec ±13.59% (32 runs sampled)
+</td></tr><tr><td><b>array delete</b></td><td>3,643,676 ops/sec ±13.19% (40 runs sampled)
+</td></tr><tr><td><b>object subscript delete</b></td><td>4,921,517 ops/sec ±9.95% (50 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is object subscript delete
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>3,060,296 ops/sec ±15.90% (31 runs sampled)
+</td></tr><tr><td><b>object delete</b></td><td>2,898,698 ops/sec ±9.76% (31 runs sampled)
+</td></tr><tr><td><b>array delete</b></td><td>3,637,026 ops/sec ±11.52% (36 runs sampled)
+</td></tr><tr><td><b>object subscript delete</b></td><td>4,693,264 ops/sec ±8.80% (47 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is object subscript delete
+
+

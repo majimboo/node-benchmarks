@@ -76,3 +76,81 @@ Darwin x64 - 13.2.0
 > - Fastest is pop
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>For loop, basic</b></td><td>167,551 ops/sec ±13.49% (33 runs sampled)
+</td></tr><tr><td><b>While loop, basic</b></td><td>169,275 ops/sec ±14.97% (31 runs sampled)
+</td></tr><tr><td><b>For loop, cached</b></td><td>217,160 ops/sec ±9.21% (39 runs sampled)
+</td></tr><tr><td><b>For loop, i--</b></td><td>41,428 ops/sec ±8.24% (46 runs sampled)
+</td></tr><tr><td><b>Do-while loop, i--</b></td><td>118,910 ops/sec ±4.96% (62 runs sampled)
+</td></tr><tr><td><b>Do-while loop, --i</b></td><td>93,659 ops/sec ±1.16% (89 runs sampled)
+</td></tr><tr><td><b>For..in loop</b></td><td>10,439 ops/sec ±1.06% (80 runs sampled)
+</td></tr><tr><td><b>Array#forEach</b></td><td>24,813 ops/sec ±0.69% (80 runs sampled)
+</td></tr><tr><td><b>underscore#each</b></td><td>24,517 ops/sec ±0.74% (86 runs sampled)
+</td></tr><tr><td><b>lodash#each</b></td><td>69,959 ops/sec ±1.95% (85 runs sampled)
+</td></tr><tr><td><b>order</b></td><td>29,538,015 ops/sec ±1.19% (82 runs sampled)
+</td></tr><tr><td><b>order validation</b></td><td>29,437,162 ops/sec ±1.10% (91 runs sampled)
+</td></tr><tr><td><b>pop</b></td><td>53,157,976 ops/sec ±2.59% (84 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is pop
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>For loop, basic</b></td><td>150,662 ops/sec ±9.99% (31 runs sampled)
+</td></tr><tr><td><b>While loop, basic</b></td><td>183,520 ops/sec ±12.36% (34 runs sampled)
+</td></tr><tr><td><b>For loop, cached</b></td><td>212,237 ops/sec ±10.45% (43 runs sampled)
+</td></tr><tr><td><b>For loop, i--</b></td><td>44,368 ops/sec ±9.25% (49 runs sampled)
+</td></tr><tr><td><b>Do-while loop, i--</b></td><td>116,212 ops/sec ±5.92% (61 runs sampled)
+</td></tr><tr><td><b>Do-while loop, --i</b></td><td>94,353 ops/sec ±1.60% (86 runs sampled)
+</td></tr><tr><td><b>For..in loop</b></td><td>10,237 ops/sec ±1.22% (82 runs sampled)
+</td></tr><tr><td><b>Array#forEach</b></td><td>25,148 ops/sec ±1.40% (92 runs sampled)
+</td></tr><tr><td><b>underscore#each</b></td><td>24,994 ops/sec ±0.97% (94 runs sampled)
+</td></tr><tr><td><b>lodash#each</b></td><td>69,418 ops/sec ±2.04% (84 runs sampled)
+</td></tr><tr><td><b>order</b></td><td>29,968,660 ops/sec ±0.73% (85 runs sampled)
+</td></tr><tr><td><b>order validation</b></td><td>28,759,448 ops/sec ±1.99% (88 runs sampled)
+</td></tr><tr><td><b>pop</b></td><td>62,101,514 ops/sec ±0.80% (86 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is pop
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>For loop, basic</b></td><td>150,052 ops/sec ±14.02% (31 runs sampled)
+</td></tr><tr><td><b>While loop, basic</b></td><td>173,168 ops/sec ±14.59% (34 runs sampled)
+</td></tr><tr><td><b>For loop, cached</b></td><td>198,781 ops/sec ±9.74% (37 runs sampled)
+</td></tr><tr><td><b>For loop, i--</b></td><td>40,017 ops/sec ±9.05% (46 runs sampled)
+</td></tr><tr><td><b>Do-while loop, i--</b></td><td>118,382 ops/sec ±5.41% (59 runs sampled)
+</td></tr><tr><td><b>Do-while loop, --i</b></td><td>82,645 ops/sec ±4.53% (83 runs sampled)
+</td></tr><tr><td><b>For..in loop</b></td><td>9,574 ops/sec ±2.77% (84 runs sampled)
+</td></tr><tr><td><b>Array#forEach</b></td><td>24,500 ops/sec ±0.93% (91 runs sampled)
+</td></tr><tr><td><b>underscore#each</b></td><td>22,848 ops/sec ±1.58% (84 runs sampled)
+</td></tr><tr><td><b>lodash#each</b></td><td>68,110 ops/sec ±1.09% (92 runs sampled)
+</td></tr><tr><td><b>order</b></td><td>29,181,583 ops/sec ±1.11% (87 runs sampled)
+</td></tr><tr><td><b>order validation</b></td><td>28,744,840 ops/sec ±0.82% (93 runs sampled)
+</td></tr><tr><td><b>pop</b></td><td>54,472,528 ops/sec ±3.18% (77 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is pop
+
+

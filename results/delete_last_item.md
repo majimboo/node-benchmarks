@@ -52,3 +52,57 @@ Darwin x64 - 13.2.0
 > - Fastest is array pop
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>322,069 ops/sec ±9.67% (26 runs sampled)
+</td></tr><tr><td><b>splice -</b></td><td>274,770 ops/sec ±13.78% (24 runs sampled)
+</td></tr><tr><td><b>splice cached</b></td><td>319,912 ops/sec ±12.69% (40 runs sampled)
+</td></tr><tr><td><b>array delete</b></td><td>323,435 ops/sec ±7.75% (45 runs sampled)
+</td></tr><tr><td><b>array pop</b></td><td>558,215 ops/sec ±5.46% (66 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is array pop
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>360,545 ops/sec ±17.58% (30 runs sampled)
+</td></tr><tr><td><b>splice -</b></td><td>237,318 ops/sec ±12.40% (36 runs sampled)
+</td></tr><tr><td><b>splice cached</b></td><td>308,735 ops/sec ±10.10% (38 runs sampled)
+</td></tr><tr><td><b>array delete</b></td><td>322,912 ops/sec ±8.11% (48 runs sampled)
+</td></tr><tr><td><b>array pop</b></td><td>531,249 ops/sec ±4.82% (62 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is array pop
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>299,503 ops/sec ±15.65% (30 runs sampled)
+</td></tr><tr><td><b>splice -</b></td><td>233,428 ops/sec ±11.87% (33 runs sampled)
+</td></tr><tr><td><b>splice cached</b></td><td>301,231 ops/sec ±11.61% (39 runs sampled)
+</td></tr><tr><td><b>array delete</b></td><td>321,450 ops/sec ±8.95% (49 runs sampled)
+</td></tr><tr><td><b>array pop</b></td><td>554,369 ops/sec ±6.23% (66 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is array pop
+
+

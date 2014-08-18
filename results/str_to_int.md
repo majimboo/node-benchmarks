@@ -73,3 +73,78 @@ Darwin x64 - 13.2.0
 > - Fastest is Math#floor
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>parseInt</b></td><td>9,717,720 ops/sec ±14.53% (29 runs sampled)
+</td></tr><tr><td><b>parseInt(a,10)</b></td><td>12,697,583 ops/sec ±13.53% (35 runs sampled)
+</td></tr><tr><td><b>Math#floor</b></td><td>8,653,946 ops/sec ±10.25% (39 runs sampled)
+</td></tr><tr><td><b>+a</b></td><td>8,207,371 ops/sec ±6.73% (44 runs sampled)
+</td></tr><tr><td><b>~~a</b></td><td>12,202,947 ops/sec ±5.25% (62 runs sampled)
+</td></tr><tr><td><b>a | 0</b></td><td>19,418,423 ops/sec ±0.91% (88 runs sampled)
+</td></tr><tr><td><b>a * 1</b></td><td>19,676,687 ops/sec ±0.89% (89 runs sampled)
+</td></tr><tr><td><b>a / 1</b></td><td>19,875,485 ops/sec ±0.56% (84 runs sampled)
+</td></tr><tr><td><b>a % Infinity</b></td><td>12,791,740 ops/sec ±0.82% (84 runs sampled)
+</td></tr><tr><td><b>a >> 0</b></td><td>21,106,723 ops/sec ±1.45% (83 runs sampled)
+</td></tr><tr><td><b>eval(a)</b></td><td>5,224,933 ops/sec ±0.81% (89 runs sampled)
+</td></tr><tr><td><b>a ^ 0</b></td><td>23,007,320 ops/sec ±1.13% (82 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is a ^ 0
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>parseInt</b></td><td>10,468,348 ops/sec ±13.56% (34 runs sampled)
+</td></tr><tr><td><b>parseInt(a,10)</b></td><td>11,039,212 ops/sec ±11.66% (32 runs sampled)
+</td></tr><tr><td><b>Math#floor</b></td><td>8,239,596 ops/sec ±8.88% (34 runs sampled)
+</td></tr><tr><td><b>+a</b></td><td>9,059,722 ops/sec ±10.52% (46 runs sampled)
+</td></tr><tr><td><b>~~a</b></td><td>11,945,863 ops/sec ±5.58% (59 runs sampled)
+</td></tr><tr><td><b>a | 0</b></td><td>19,959,770 ops/sec ±1.25% (88 runs sampled)
+</td></tr><tr><td><b>a * 1</b></td><td>19,948,293 ops/sec ±1.38% (88 runs sampled)
+</td></tr><tr><td><b>a / 1</b></td><td>20,018,193 ops/sec ±1.44% (90 runs sampled)
+</td></tr><tr><td><b>a % Infinity</b></td><td>12,581,258 ops/sec ±0.75% (88 runs sampled)
+</td></tr><tr><td><b>a >> 0</b></td><td>21,320,262 ops/sec ±1.50% (85 runs sampled)
+</td></tr><tr><td><b>eval(a)</b></td><td>5,106,925 ops/sec ±0.73% (88 runs sampled)
+</td></tr><tr><td><b>a ^ 0</b></td><td>22,012,205 ops/sec ±0.97% (88 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is a ^ 0
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>parseInt</b></td><td>8,895,718 ops/sec ±13.25% (30 runs sampled)
+</td></tr><tr><td><b>parseInt(a,10)</b></td><td>11,834,133 ops/sec ±14.30% (34 runs sampled)
+</td></tr><tr><td><b>Math#floor</b></td><td>8,898,260 ops/sec ±11.77% (38 runs sampled)
+</td></tr><tr><td><b>+a</b></td><td>9,333,869 ops/sec ±8.15% (51 runs sampled)
+</td></tr><tr><td><b>~~a</b></td><td>11,640,301 ops/sec ±5.88% (59 runs sampled)
+</td></tr><tr><td><b>a | 0</b></td><td>18,843,692 ops/sec ±2.84% (85 runs sampled)
+</td></tr><tr><td><b>a * 1</b></td><td>19,317,794 ops/sec ±1.41% (85 runs sampled)
+</td></tr><tr><td><b>a / 1</b></td><td>19,934,292 ops/sec ±0.76% (92 runs sampled)
+</td></tr><tr><td><b>a % Infinity</b></td><td>12,526,462 ops/sec ±0.98% (92 runs sampled)
+</td></tr><tr><td><b>a >> 0</b></td><td>20,132,687 ops/sec ±1.26% (93 runs sampled)
+</td></tr><tr><td><b>eval(a)</b></td><td>5,143,751 ops/sec ±0.95% (87 runs sampled)
+</td></tr><tr><td><b>a ^ 0</b></td><td>21,260,745 ops/sec ±1.06% (82 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is a ^ 0
+
+

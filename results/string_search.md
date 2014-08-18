@@ -52,3 +52,57 @@ Darwin x64 - 13.2.0
 > - Fastest is regex#test precompiled
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>regex#test</b></td><td>4,335,320 ops/sec ±14.80% (32 runs sampled)
+</td></tr><tr><td><b>string#search</b></td><td>3,646,932 ops/sec ±13.37% (30 runs sampled)
+</td></tr><tr><td><b>string#match</b></td><td>2,824,566 ops/sec ±9.61% (37 runs sampled)
+</td></tr><tr><td><b>string#indexOf</b></td><td>924,302 ops/sec ±8.30% (44 runs sampled)
+</td></tr><tr><td><b>regex#test precompiled</b></td><td>10,849,986 ops/sec ±4.91% (60 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is regex#test precompiled
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>regex#test</b></td><td>4,080,027 ops/sec ±12.68% (28 runs sampled)
+</td></tr><tr><td><b>string#search</b></td><td>3,570,544 ops/sec ±13.50% (30 runs sampled)
+</td></tr><tr><td><b>string#match</b></td><td>2,751,830 ops/sec ±12.38% (37 runs sampled)
+</td></tr><tr><td><b>string#indexOf</b></td><td>964,017 ops/sec ±10.40% (49 runs sampled)
+</td></tr><tr><td><b>regex#test precompiled</b></td><td>10,115,049 ops/sec ±6.23% (60 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is regex#test precompiled
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>regex#test</b></td><td>3,770,438 ops/sec ±13.16% (27 runs sampled)
+</td></tr><tr><td><b>string#search</b></td><td>3,517,515 ops/sec ±11.94% (33 runs sampled)
+</td></tr><tr><td><b>string#match</b></td><td>2,724,718 ops/sec ±9.44% (37 runs sampled)
+</td></tr><tr><td><b>string#indexOf</b></td><td>969,715 ops/sec ±8.14% (46 runs sampled)
+</td></tr><tr><td><b>regex#test precompiled</b></td><td>10,672,578 ops/sec ±4.43% (63 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is regex#test precompiled
+
+

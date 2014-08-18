@@ -46,3 +46,51 @@ Darwin x64 - 13.2.0
 > - Fastest is for Object#keys.length
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prop in Object</b></td><td>293,782 ops/sec ±15.30% (31 runs sampled)
+</td></tr><tr><td><b>forEach Object#keys</b></td><td>487,022 ops/sec ±14.28% (38 runs sampled)
+</td></tr><tr><td><b>for Object#keys.length</b></td><td>1,020,451 ops/sec ±12.29% (44 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is for Object#keys.length
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prop in Object</b></td><td>264,303 ops/sec ±10.60% (32 runs sampled)
+</td></tr><tr><td><b>forEach Object#keys</b></td><td>439,353 ops/sec ±13.62% (32 runs sampled)
+</td></tr><tr><td><b>for Object#keys.length</b></td><td>886,582 ops/sec ±12.67% (35 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is for Object#keys.length
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prop in Object</b></td><td>261,358 ops/sec ±13.28% (32 runs sampled)
+</td></tr><tr><td><b>forEach Object#keys</b></td><td>454,502 ops/sec ±14.16% (34 runs sampled)
+</td></tr><tr><td><b>for Object#keys.length</b></td><td>893,947 ops/sec ±10.32% (35 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is for Object#keys.length
+
+
