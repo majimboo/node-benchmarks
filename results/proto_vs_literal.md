@@ -114,3 +114,20 @@ Windows_NT x64 - 6.2.9200
 Fastest is prototype
 </td></tr>
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prototype</b></td><td>15,153,048 ops/sec ±5.30% (54 runs sampled)
+</td></tr><tr><td><b>literal</b></td><td>5,295,380 ops/sec ±5.17% (53 runs sampled)
+</td></tr><tr><td><b>prototype 1M</b></td><td>3.50 ops/sec ±10.75% (14 runs sampled)
+</td></tr><tr><td><b>literal 1M</b></td><td>3.33 ops/sec ±8.89% (13 runs sampled)
+</td></tr>
+
+</table>
+
+> Notes:
+> - Fastest is prototype

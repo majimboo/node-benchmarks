@@ -121,3 +121,21 @@ Windows_NT x64 - 6.2.9200
 Fastest is for loop (with function call)
 </td></tr>
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>CoffeeScript comprehension</b></td><td>59,401 ops/sec ±5.58% (60 runs sampled)
+</td></tr><tr><td><b>for loop (with function call)</b></td><td>52,031 ops/sec ±4.96% (59 runs sampled)
+</td></tr><tr><td><b>Array#map</b></td><td>9,083 ops/sec ±6.65% (62 runs sampled)
+</td></tr><tr><td><b>underscore#map</b></td><td>10,708 ops/sec ±5.64% (72 runs sampled)
+</td></tr><tr><td><b>lodash#map</b></td><td>88,546 ops/sec ±1.80% (86 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#map
+
+

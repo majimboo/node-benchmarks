@@ -103,3 +103,15 @@ Windows_NT x64 - 6.2.9200
 
 > Notes:
 > - Fastest is eliminateDuplicates
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>filterDuplicates</b></td><td>39,920 ops/sec ±5.87% (59 runs sampled)
+</td></tr><tr><td><b>eliminateDuplicates</b></td><td>63,424 ops/sec ±5.14% (59 runs sampled)
+Fastest is eliminateDuplicates
+</td></tr>
+

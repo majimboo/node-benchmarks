@@ -124,3 +124,21 @@ Windows_NT x64 - 6.2.9200
 
 > Notes:
 > - Fastest is array pop
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>932,204 ops/sec ±5.85% (59 runs sampled)
+</td></tr><tr><td><b>splice -</b></td><td>703,637 ops/sec ±6.58% (46 runs sampled)
+</td></tr><tr><td><b>splice cached</b></td><td>938,118 ops/sec ±7.76% (64 runs sampled)
+</td></tr><tr><td><b>array delete</b></td><td>786,967 ops/sec ±3.69% (79 runs sampled)
+</td></tr><tr><td><b>array pop</b></td><td>1,910,830 ops/sec ±1.42% (93 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is array pop
+
+

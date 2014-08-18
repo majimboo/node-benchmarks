@@ -107,3 +107,16 @@ Windows_NT x64 - 6.2.9200
 Fastest is if else,lookup table
 </td></tr>
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>if else</b></td><td>23,480,365 ops/sec ±7.15% (49 runs sampled)
+</td></tr><tr><td><b>switch</b></td><td>7,825,898 ops/sec ±5.20% (59 runs sampled)
+</td></tr><tr><td><b>lookup table</b></td><td>12,101,997 ops/sec ±7.09% (55 runs sampled)
+Fastest is if else
+</td></tr>
+

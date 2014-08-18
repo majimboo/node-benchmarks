@@ -100,3 +100,15 @@ Windows_NT x64 - 6.2.9200
 Fastest is string
 </td></tr>
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buffer</b></td><td>53,982 ops/sec ±35.60% (29 runs sampled)
+</td></tr><tr><td><b>string</b></td><td>257,858 ops/sec ±27.34% (36 runs sampled)
+Fastest is string
+</td></tr>
+

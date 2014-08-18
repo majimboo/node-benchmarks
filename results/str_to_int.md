@@ -173,3 +173,28 @@ Windows_NT x64 - 6.2.9200
 > - Fastest is a ^ 0
 
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>parseInt</b></td><td>13,781,707 ops/sec ±3.66% (72 runs sampled)
+</td></tr><tr><td><b>parseInt(a,10)</b></td><td>16,559,399 ops/sec ±5.75% (57 runs sampled)
+</td></tr><tr><td><b>Math#floor</b></td><td>12,609,125 ops/sec ±6.27% (68 runs sampled)
+</td></tr><tr><td><b>+a</b></td><td>12,877,940 ops/sec ±2.92% (88 runs sampled)
+</td></tr><tr><td><b>~~a</b></td><td>18,063,974 ops/sec ±1.39% (86 runs sampled)
+</td></tr><tr><td><b>a | 0</b></td><td>21,290,381 ops/sec ±1.30% (82 runs sampled)
+</td></tr><tr><td><b>a * 1</b></td><td>18,167,034 ops/sec ±1.48% (84 runs sampled)
+</td></tr><tr><td><b>a / 1</b></td><td>18,082,332 ops/sec ±1.57% (88 runs sampled)
+</td></tr><tr><td><b>a % Infinity</b></td><td>15,109,247 ops/sec ±1.64% (82 runs sampled)
+</td></tr><tr><td><b>a >> 0</b></td><td>21,928,198 ops/sec ±2.01% (83 runs sampled)
+</td></tr><tr><td><b>eval(a)</b></td><td>4,896,221 ops/sec ±1.67% (86 runs sampled)
+</td></tr><tr><td><b>a ^ 0</b></td><td>24,131,876 ops/sec ±1.54% (88 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is a ^ 0
+
+

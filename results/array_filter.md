@@ -107,3 +107,16 @@ Windows_NT x64 - 6.2.9200
 Fastest is lodash#filter
 </td></tr>
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Array#filter</b></td><td>96,923 ops/sec ±5.84% (55 runs sampled)
+</td></tr><tr><td><b>underscore#filter</b></td><td>78,609 ops/sec ±5.88% (47 runs sampled)
+</td></tr><tr><td><b>lodash#filter</b></td><td>206,844 ops/sec ±7.88% (63 runs sampled)
+Fastest is lodash#filter
+</td></tr>
+

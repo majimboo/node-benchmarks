@@ -114,3 +114,20 @@ Windows_NT x64 - 6.2.9200
 Fastest is array delete,object subscript delete,object delete
 </td></tr>
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>4,022,778 ops/sec ±5.67% (60 runs sampled)
+</td></tr><tr><td><b>object delete</b></td><td>4,014,547 ops/sec ±6.13% (54 runs sampled)
+</td></tr><tr><td><b>array delete</b></td><td>4,778,633 ops/sec ±15.22% (53 runs sampled)
+</td></tr><tr><td><b>object subscript delete</b></td><td>6,124,961 ops/sec ±3.28% (76 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is object subscript delete
+
+

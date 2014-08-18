@@ -138,3 +138,20 @@ Windows_NT x64 - 6.2.9200
 > - Fastest is plainArray noAssert
 
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buf.read</b></td><td>2,501,961 ops/sec ±7.22% (58 runs sampled)
+</td></tr><tr><td><b>buf.myRead</b></td><td>1,821,131 ops/sec ±6.40% (46 runs sampled)
+</td></tr><tr><td><b>buf.read noAssert</b></td><td>4,134,845 ops/sec ±7.59% (61 runs sampled)
+</td></tr><tr><td><b>buf.myRead noAssert</b></td><td>5,270,479 ops/sec ±3.34% (79 runs sampled)
+</td></tr><tr><td><b>plainArray</b></td><td>5,249,535 ops/sec ±1.92% (88 runs sampled)
+</td></tr><tr><td><b>plainArray noAssert</b></td><td>8,227,405 ops/sec ±1.57% (83 runs sampled)
+</td></tr><tr><td><b>ArrayBuffer DataView</b></td><td>1,806,615 ops/sec ±1.63% (84 runs sampled)
+Fastest is plainArray noAssert
+</td></tr>
+

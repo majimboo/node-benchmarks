@@ -114,3 +114,17 @@ Windows_NT x64 - 6.2.9200
 Fastest is buf.myWrite noAssert
 </td></tr>
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buf.write</b></td><td>13,727,626 ops/sec ±5.83% (59 runs sampled)
+</td></tr><tr><td><b>buf.myWrite</b></td><td>7,327,056 ops/sec ±5.62% (56 runs sampled)
+</td></tr><tr><td><b>buf.write noAssert</b></td><td>19,991,637 ops/sec ±9.73% (62 runs sampled)
+</td></tr><tr><td><b>buf.myWrite noAssert</b></td><td>15,587,714 ops/sec ±4.95% (74 runs sampled)
+Fastest is buf.write noAssert
+</td></tr>
+
