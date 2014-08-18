@@ -117,3 +117,20 @@ Windows_NT x64 - 6.2.9200
 
 > Notes:
 > - Fastest is direct
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>apply</b></td><td>1,473,236 ops/sec ±5.41% (65 runs sampled)
+</td></tr><tr><td><b>call</b></td><td>10,665,425 ops/sec ±4.70% (69 runs sampled)
+</td></tr><tr><td><b>bind</b></td><td>288,016 ops/sec ±9.18% (53 runs sampled)
+</td></tr><tr><td><b>direct</b></td><td>16,677,618 ops/sec ±3.99% (76 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is direct
+
+

@@ -114,3 +114,17 @@ Windows_NT x64 - 6.2.9200
 Fastest is i += 1,i++,++i
 </td></tr>
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>i++</b></td><td>31,056,430 ops/sec ±6.91% (55 runs sampled)
+</td></tr><tr><td><b>++i</b></td><td>21,672,390 ops/sec ±6.53% (57 runs sampled)
+</td></tr><tr><td><b>i += 1</b></td><td>32,787,621 ops/sec ±5.97% (58 runs sampled)
+</td></tr><tr><td><b>inc fn</b></td><td>33,589,597 ops/sec ±4.25% (75 runs sampled)
+Fastest is inc fn,i += 1,i++
+</td></tr>
+

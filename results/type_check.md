@@ -103,3 +103,15 @@ Windows_NT x64 - 6.2.9200
 > - Fastest is typeof
 
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>typeof</b></td><td>40,196,020 ops/sec ±6.37% (53 runs sampled)
+</td></tr><tr><td><b>constructor check</b></td><td>2,111,500 ops/sec ±7.59% (59 runs sampled)
+Fastest is typeof
+</td></tr>
+

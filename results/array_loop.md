@@ -180,3 +180,29 @@ Windows_NT x64 - 6.2.9200
 > - Fastest is pop
 
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>For loop, basic</b></td><td>299,652 ops/sec ±6.52% (55 runs sampled)
+</td></tr><tr><td><b>While loop, basic</b></td><td>247,474 ops/sec ±6.14% (52 runs sampled)
+</td></tr><tr><td><b>For loop, cached</b></td><td>315,241 ops/sec ±7.63% (61 runs sampled)
+</td></tr><tr><td><b>For loop, i--</b></td><td>49,527 ops/sec ±3.07% (79 runs sampled)
+</td></tr><tr><td><b>Do-while loop, i--</b></td><td>126,011 ops/sec ±1.46% (91 runs sampled)
+</td></tr><tr><td><b>Do-while loop, --i</b></td><td>75,218 ops/sec ±1.26% (87 runs sampled)
+</td></tr><tr><td><b>For..in loop</b></td><td>9,498 ops/sec ±1.46% (84 runs sampled)
+</td></tr><tr><td><b>Array#forEach</b></td><td>21,350 ops/sec ±1.84% (86 runs sampled)
+</td></tr><tr><td><b>underscore#each</b></td><td>21,965 ops/sec ±1.82% (83 runs sampled)
+</td></tr><tr><td><b>lodash#each</b></td><td>66,774 ops/sec ±1.55% (87 runs sampled)
+</td></tr><tr><td><b>order</b></td><td>28,738,353 ops/sec ±1.97% (85 runs sampled)
+</td></tr><tr><td><b>order validation</b></td><td>28,197,719 ops/sec ±2.05% (86 runs sampled)
+</td></tr><tr><td><b>pop</b></td><td>58,279,586 ops/sec ±2.10% (84 runs sampled)
+</td></tr>
+
+</table>
+
+> Notes:
+> - Fastest is pop

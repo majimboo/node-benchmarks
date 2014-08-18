@@ -159,3 +159,26 @@ Windows_NT x64 - 6.2.9200
 > - Fastest is modulo,a << 0,a & a
 
 
+Windows_NT ia32 - 6.2.9200
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>17.1 GB</td><td>Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Math#floor</b></td><td>29,906,121 ops/sec ±5.47% (47 runs sampled)
+</td></tr><tr><td><b>parseInt</b></td><td>12,250,861 ops/sec ±7.11% (53 runs sampled)
+</td></tr><tr><td><b>parseInt(a,10)</b></td><td>18,208,586 ops/sec ±7.22% (67 runs sampled)
+</td></tr><tr><td><b>~~a</b></td><td>41,937,089 ops/sec ±4.78% (79 runs sampled)
+</td></tr><tr><td><b>a | a</b></td><td>55,227,216 ops/sec ±3.20% (86 runs sampled)
+</td></tr><tr><td><b>a | 0</b></td><td>58,771,633 ops/sec ±2.13% (79 runs sampled)
+</td></tr><tr><td><b>a & a</b></td><td>59,510,138 ops/sec ±1.27% (87 runs sampled)
+</td></tr><tr><td><b>a << 0</b></td><td>60,115,708 ops/sec ±2.24% (83 runs sampled)
+</td></tr><tr><td><b>Int#toFixed</b></td><td>2,316,708 ops/sec ±1.42% (91 runs sampled)
+</td></tr><tr><td><b>modulo</b></td><td>66,601,257 ops/sec ±1.50% (87 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is modulo
+
+
