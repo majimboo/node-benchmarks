@@ -118,12 +118,12 @@ Windows_NT x64 - 6.2.9200
 </td></tr><tr><td><b>splice cached</b></td><td>168,466 ops/sec ±10.78% (37 runs sampled)
 </td></tr><tr><td><b>array delete</b></td><td>177,978 ops/sec ±8.48% (56 runs sampled)
 </td></tr><tr><td><b>array pop</b></td><td>304,153 ops/sec ±8.05% (56 runs sampled)
-</td></tr>
-
-</table>
+</td></tr></table>
 
 > Notes:
 > - Fastest is array pop
+
+
 Windows_NT ia32 - 6.2.9200
 -----
 
@@ -136,6 +136,24 @@ Windows_NT ia32 - 6.2.9200
 </td></tr><tr><td><b>splice cached</b></td><td>938,118 ops/sec ±7.76% (64 runs sampled)
 </td></tr><tr><td><b>array delete</b></td><td>786,967 ops/sec ±3.69% (79 runs sampled)
 </td></tr><tr><td><b>array pop</b></td><td>1,910,830 ops/sec ±1.42% (93 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is array pop
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>337,539 ops/sec ±15.97% (29 runs sampled)
+</td></tr><tr><td><b>splice -</b></td><td>246,274 ops/sec ±7.18% (27 runs sampled)
+</td></tr><tr><td><b>splice cached</b></td><td>313,875 ops/sec ±10.46% (37 runs sampled)
+</td></tr><tr><td><b>array delete</b></td><td>314,905 ops/sec ±9.53% (48 runs sampled)
+</td></tr><tr><td><b>array pop</b></td><td>565,654 ops/sec ±6.58% (69 runs sampled)
 </td></tr></table>
 
 > Notes:

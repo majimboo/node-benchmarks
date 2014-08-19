@@ -10,6 +10,9 @@ var resultsPath = path.join(__dirname, 'results');
 
 var scriptsPath = path.join(__dirname, 'scripts');
 
+// fake it
+// fs.appendFileSync = function() {};
+
 glob(path.join(scriptsPath, '*.js'), function (err, files) {
     var done = 0;
     var total = files.length;
@@ -31,15 +34,17 @@ glob(path.join(scriptsPath, '*.js'), function (err, files) {
 
         node.stdout.on('data', function (data) {
             if (data) {
+                var isDone = data.toString().indexOf('Fastest is') > -1;
+
                 var resulta = data.toString().split(' x ');
-                if (resulta[0] && resulta[1]) {
+                if (resulta[0] && resulta[1] && !isDone) {
                     fs.appendFileSync(resultPath, '<tr>');
                     fs.appendFileSync(resultPath, '<td><b>' + resulta[0] + '</b></td>');
                     fs.appendFileSync(resultPath, '<td>' + resulta[1] + '</td>');
                     fs.appendFileSync(resultPath, '</tr>');
                 }
 
-                if (resulta[0] && !resulta[1]) {
+                if (isDone) {
                     fs.appendFileSync(resultPath, '</table>\n\n');
                     fs.appendFileSync(resultPath, '> Notes:\n');
                     fs.appendFileSync(resultPath, '> - ' + data);

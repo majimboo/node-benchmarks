@@ -111,8 +111,10 @@ Windows_NT x64 - 6.2.9200
 </td></tr><tr><td><b>buf.myWrite</b></td><td>2,887,810 ops/sec ±10.75% (40 runs sampled)
 </td></tr><tr><td><b>buf.write noAssert</b></td><td>3,880,602 ops/sec ±11.37% (37 runs sampled)
 </td></tr><tr><td><b>buf.myWrite noAssert</b></td><td>5,106,313 ops/sec ±8.85% (46 runs sampled)
-Fastest is buf.myWrite noAssert
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is buf.myWrite noAssert
 
 Windows_NT ia32 - 6.2.9200
 -----
@@ -125,6 +127,26 @@ Windows_NT ia32 - 6.2.9200
 </td></tr><tr><td><b>buf.myWrite</b></td><td>7,327,056 ops/sec ±5.62% (56 runs sampled)
 </td></tr><tr><td><b>buf.write noAssert</b></td><td>19,991,637 ops/sec ±9.73% (62 runs sampled)
 </td></tr><tr><td><b>buf.myWrite noAssert</b></td><td>15,587,714 ops/sec ±4.95% (74 runs sampled)
-Fastest is buf.write noAssert
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is buf.write noAssert
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buf.write</b></td><td>4,636,273 ops/sec ±16.18% (35 runs sampled)
+</td></tr><tr><td><b>buf.myWrite</b></td><td>5,238,085 ops/sec ±14.11% (32 runs sampled)
+</td></tr><tr><td><b>buf.write noAssert</b></td><td>8,897,029 ops/sec ±10.49% (36 runs sampled)
+</td></tr><tr><td><b>buf.myWrite noAssert</b></td><td>12,866,954 ops/sec ±7.69% (45 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is buf.myWrite noAssert
+
 

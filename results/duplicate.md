@@ -97,12 +97,11 @@ Windows_NT x64 - 6.2.9200
 
 <table><tr><td><b>filterDuplicates</b></td><td>10,843 ops/sec ±11.79% (40 runs sampled)
 </td></tr><tr><td><b>eliminateDuplicates</b></td><td>20,676 ops/sec ±9.23% (43 runs sampled)
-</td></tr>
-
-</table>
+</td></tr></table>
 
 > Notes:
 > - Fastest is eliminateDuplicates
+
 Windows_NT ia32 - 6.2.9200
 -----
 
@@ -112,6 +111,24 @@ Windows_NT ia32 - 6.2.9200
 
 <table><tr><td><b>filterDuplicates</b></td><td>39,920 ops/sec ±5.87% (59 runs sampled)
 </td></tr><tr><td><b>eliminateDuplicates</b></td><td>63,424 ops/sec ±5.14% (59 runs sampled)
-Fastest is eliminateDuplicates
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is eliminateDuplicates
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>filterDuplicates</b></td><td>26,101 ops/sec ±18.25% (33 runs sampled)
+</td></tr><tr><td><b>eliminateDuplicates</b></td><td>44,338 ops/sec ±14.70% (32 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is eliminateDuplicates
+
 

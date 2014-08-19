@@ -97,8 +97,10 @@ Windows_NT x64 - 6.2.9200
 
 <table><tr><td><b>bluebird</b></td><td>382,465 ops/sec ±14.66% (41 runs sampled)
 </td></tr><tr><td><b>q</b></td><td>43,026 ops/sec ±5.92% (52 runs sampled)
-Fastest is bluebird
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is bluebird
 
 Windows_NT ia32 - 6.2.9200
 -----
@@ -109,6 +111,24 @@ Windows_NT ia32 - 6.2.9200
 
 <table><tr><td><b>bluebird</b></td><td>447,904 ops/sec ±13.77% (19 runs sampled)
 </td></tr><tr><td><b>q</b></td><td>38,302 ops/sec ±9.43% (32 runs sampled)
-Fastest is bluebird
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is bluebird
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>bluebird</b></td><td>279,846 ops/sec ±20.94% (27 runs sampled)
+</td></tr><tr><td><b>q</b></td><td>27,629 ops/sec ±11.81% (32 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is bluebird
+
 

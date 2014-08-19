@@ -112,6 +112,23 @@ Windows_NT ia32 - 6.2.9200
 
 <table><tr><td><b>typeof</b></td><td>40,196,020 ops/sec ±6.37% (53 runs sampled)
 </td></tr><tr><td><b>constructor check</b></td><td>2,111,500 ops/sec ±7.59% (59 runs sampled)
-Fastest is typeof
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is typeof
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>typeof</b></td><td>27,041,041 ops/sec ±10.90% (28 runs sampled)
+</td></tr><tr><td><b>constructor check</b></td><td>1,396,360 ops/sec ±13.73% (31 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is typeof
+
 

@@ -104,8 +104,10 @@ Windows_NT x64 - 6.2.9200
 <table><tr><td><b>Array#filter</b></td><td>36,723 ops/sec ±13.73% (33 runs sampled)
 </td></tr><tr><td><b>underscore#filter</b></td><td>48,895 ops/sec ±9.82% (50 runs sampled)
 </td></tr><tr><td><b>lodash#filter</b></td><td>134,831 ops/sec ±8.68% (54 runs sampled)
-Fastest is lodash#filter
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#filter
 
 Windows_NT ia32 - 6.2.9200
 -----
@@ -117,6 +119,25 @@ Windows_NT ia32 - 6.2.9200
 <table><tr><td><b>Array#filter</b></td><td>96,923 ops/sec ±5.84% (55 runs sampled)
 </td></tr><tr><td><b>underscore#filter</b></td><td>78,609 ops/sec ±5.88% (47 runs sampled)
 </td></tr><tr><td><b>lodash#filter</b></td><td>206,844 ops/sec ±7.88% (63 runs sampled)
-Fastest is lodash#filter
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#filter
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Array#filter</b></td><td>72,232 ops/sec ±16.85% (31 runs sampled)
+</td></tr><tr><td><b>underscore#filter</b></td><td>91,629 ops/sec ±13.05% (34 runs sampled)
+</td></tr><tr><td><b>lodash#filter</b></td><td>265,155 ops/sec ±11.21% (35 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#filter
+
 

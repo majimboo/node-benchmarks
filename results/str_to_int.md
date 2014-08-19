@@ -198,3 +198,28 @@ Windows_NT ia32 - 6.2.9200
 > - Fastest is a ^ 0
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>parseInt</b></td><td>9,871,994 ops/sec ±16.55% (33 runs sampled)
+</td></tr><tr><td><b>parseInt(a,10)</b></td><td>12,801,422 ops/sec ±15.57% (32 runs sampled)
+</td></tr><tr><td><b>Math#floor</b></td><td>8,727,577 ops/sec ±12.43% (38 runs sampled)
+</td></tr><tr><td><b>+a</b></td><td>9,310,197 ops/sec ±8.49% (46 runs sampled)
+</td></tr><tr><td><b>~~a</b></td><td>11,690,608 ops/sec ±5.74% (62 runs sampled)
+</td></tr><tr><td><b>a | 0</b></td><td>20,965,681 ops/sec ±1.77% (89 runs sampled)
+</td></tr><tr><td><b>a * 1</b></td><td>19,915,299 ops/sec ±2.24% (91 runs sampled)
+</td></tr><tr><td><b>a / 1</b></td><td>19,711,442 ops/sec ±1.65% (86 runs sampled)
+</td></tr><tr><td><b>a % Infinity</b></td><td>13,096,566 ops/sec ±1.09% (92 runs sampled)
+</td></tr><tr><td><b>a >> 0</b></td><td>21,236,093 ops/sec ±2.23% (80 runs sampled)
+</td></tr><tr><td><b>eval(a)</b></td><td>5,144,572 ops/sec ±2.07% (83 runs sampled)
+</td></tr><tr><td><b>a ^ 0</b></td><td>22,296,513 ops/sec ±1.39% (87 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is a ^ 0
+
+

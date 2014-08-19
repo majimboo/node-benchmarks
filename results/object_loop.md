@@ -104,8 +104,10 @@ Windows_NT x64 - 6.2.9200
 <table><tr><td><b>prop in Object</b></td><td>263,970 ops/sec ±8.64% (70 runs sampled)
 </td></tr><tr><td><b>forEach Object#keys</b></td><td>442,728 ops/sec ±6.83% (69 runs sampled)
 </td></tr><tr><td><b>for Object#keys.length</b></td><td>663,769 ops/sec ±6.76% (68 runs sampled)
-Fastest is for Object#keys.length
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - for Object#keys.length
 
 Windows_NT ia32 - 6.2.9200
 -----
@@ -117,6 +119,25 @@ Windows_NT ia32 - 6.2.9200
 <table><tr><td><b>prop in Object</b></td><td>441,334 ops/sec ±4.95% (58 runs sampled)
 </td></tr><tr><td><b>forEach Object#keys</b></td><td>603,909 ops/sec ±4.78% (69 runs sampled)
 </td></tr><tr><td><b>for Object#keys.length</b></td><td>1,272,180 ops/sec ±6.92% (62 runs sampled)
-Fastest is for Object#keys.length
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - for Object#keys.length
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prop in Object</b></td><td>281,061 ops/sec ±14.96% (30 runs sampled)
+</td></tr><tr><td><b>forEach Object#keys</b></td><td>397,124 ops/sec ±13.33% (33 runs sampled)
+</td></tr><tr><td><b>for Object#keys.length</b></td><td>932,284 ops/sec ±11.61% (38 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is for Object#keys.length
+
 

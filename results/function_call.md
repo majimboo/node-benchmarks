@@ -134,3 +134,20 @@ Windows_NT ia32 - 6.2.9200
 > - Fastest is direct
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>apply</b></td><td>956,757 ops/sec ±11.09% (28 runs sampled)
+</td></tr><tr><td><b>call</b></td><td>6,579,426 ops/sec ±12.50% (32 runs sampled)
+</td></tr><tr><td><b>bind</b></td><td>189,039 ops/sec ±10.58% (37 runs sampled)
+</td></tr><tr><td><b>direct</b></td><td>11,377,799 ops/sec ±8.71% (46 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is direct
+
+

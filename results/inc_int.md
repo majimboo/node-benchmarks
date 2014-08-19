@@ -111,8 +111,11 @@ Windows_NT x64 - 6.2.9200
 </td></tr><tr><td><b>++i</b></td><td>12,327,200 ops/sec ±10.28% (43 runs sampled)
 </td></tr><tr><td><b>i += 1</b></td><td>13,751,957 ops/sec ±10.57% (36 runs sampled)
 </td></tr><tr><td><b>inc fn</b></td><td>10,169,836 ops/sec ±10.80% (40 runs sampled)
-Fastest is i += 1,i++,++i
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is i++
+
 
 Windows_NT ia32 - 6.2.9200
 -----
@@ -125,6 +128,26 @@ Windows_NT ia32 - 6.2.9200
 </td></tr><tr><td><b>++i</b></td><td>21,672,390 ops/sec ±6.53% (57 runs sampled)
 </td></tr><tr><td><b>i += 1</b></td><td>32,787,621 ops/sec ±5.97% (58 runs sampled)
 </td></tr><tr><td><b>inc fn</b></td><td>33,589,597 ops/sec ±4.25% (75 runs sampled)
-Fastest is inc fn,i += 1,i++
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is inc fn
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>i++</b></td><td>23,019,091 ops/sec ±14.54% (35 runs sampled)
+</td></tr><tr><td><b>++i</b></td><td>21,004,055 ops/sec ±15.38% (31 runs sampled)
+</td></tr><tr><td><b>i += 1</b></td><td>26,025,630 ops/sec ±13.04% (40 runs sampled)
+</td></tr><tr><td><b>inc fn</b></td><td>27,154,999 ops/sec ±8.37% (48 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is inc fn,i += 1,i++
+
 

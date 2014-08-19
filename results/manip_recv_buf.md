@@ -97,8 +97,11 @@ Windows_NT x64 - 6.2.9200
 
 <table><tr><td><b>buffer</b></td><td>720 ops/sec ±191.03% (41 runs sampled)
 </td></tr><tr><td><b>string+</b></td><td>18,320 ops/sec ±31.02% (32 runs sampled)
-Fastest is string+
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is string+
+
 
 Windows_NT ia32 - 6.2.9200
 -----
@@ -109,6 +112,24 @@ Windows_NT ia32 - 6.2.9200
 
 <table><tr><td><b>buffer</b></td><td>89,961 ops/sec ±11.33% (47 runs sampled)
 </td></tr><tr><td><b>string+</b></td><td>52,855 ops/sec ±23.38% (41 runs sampled)
-Fastest is buffer
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is buffer
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buffer</b></td><td>40,832 ops/sec ±57.24% (28 runs sampled)
+</td></tr><tr><td><b>string+</b></td><td>39,013 ops/sec ±22.09% (33 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is string+
+
 

@@ -111,8 +111,10 @@ Windows_NT x64 - 6.2.9200
 </td></tr><tr><td><b>object delete</b></td><td>2,198,942 ops/sec ±7.36% (58 runs sampled)
 </td></tr><tr><td><b>array delete</b></td><td>2,332,218 ops/sec ±6.46% (55 runs sampled)
 </td></tr><tr><td><b>object subscript delete</b></td><td>2,196,095 ops/sec ±6.46% (60 runs sampled)
-Fastest is array delete,object subscript delete,object delete
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is array delete
 
 Windows_NT ia32 - 6.2.9200
 -----
@@ -125,6 +127,23 @@ Windows_NT ia32 - 6.2.9200
 </td></tr><tr><td><b>object delete</b></td><td>4,014,547 ops/sec ±6.13% (54 runs sampled)
 </td></tr><tr><td><b>array delete</b></td><td>4,778,633 ops/sec ±15.22% (53 runs sampled)
 </td></tr><tr><td><b>object subscript delete</b></td><td>6,124,961 ops/sec ±3.28% (76 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is object subscript delete
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>3,680,170 ops/sec ±16.87% (34 runs sampled)
+</td></tr><tr><td><b>object delete</b></td><td>2,904,106 ops/sec ±13.37% (32 runs sampled)
+</td></tr><tr><td><b>array delete</b></td><td>3,845,039 ops/sec ±12.10% (42 runs sampled)
+</td></tr><tr><td><b>object subscript delete</b></td><td>4,852,970 ops/sec ±8.38% (44 runs sampled)
 </td></tr></table>
 
 > Notes:

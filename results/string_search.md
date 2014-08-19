@@ -142,3 +142,21 @@ Windows_NT ia32 - 6.2.9200
 > - Fastest is regex#test precompiled
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>regex#test</b></td><td>4,481,640 ops/sec ±14.55% (30 runs sampled)
+</td></tr><tr><td><b>string#search</b></td><td>3,626,501 ops/sec ±13.53% (34 runs sampled)
+</td></tr><tr><td><b>string#match</b></td><td>2,755,509 ops/sec ±11.57% (37 runs sampled)
+</td></tr><tr><td><b>string#indexOf</b></td><td>994,405 ops/sec ±10.14% (45 runs sampled)
+</td></tr><tr><td><b>regex#test precompiled</b></td><td>10,652,148 ops/sec ±6.86% (65 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is regex#test precompiled
+
+

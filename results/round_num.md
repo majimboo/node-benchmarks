@@ -182,3 +182,26 @@ Windows_NT ia32 - 6.2.9200
 > - Fastest is modulo
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Math#floor</b></td><td>22,603,642 ops/sec ±17.21% (30 runs sampled)
+</td></tr><tr><td><b>parseInt</b></td><td>9,114,135 ops/sec ±9.95% (27 runs sampled)
+</td></tr><tr><td><b>parseInt(a,10)</b></td><td>13,782,388 ops/sec ±12.58% (37 runs sampled)
+</td></tr><tr><td><b>~~a</b></td><td>27,119,389 ops/sec ±8.51% (44 runs sampled)
+</td></tr><tr><td><b>a | a</b></td><td>39,012,057 ops/sec ±8.27% (59 runs sampled)
+</td></tr><tr><td><b>a | 0</b></td><td>61,358,804 ops/sec ±3.25% (90 runs sampled)
+</td></tr><tr><td><b>a & a</b></td><td>63,982,641 ops/sec ±2.25% (73 runs sampled)
+</td></tr><tr><td><b>a << 0</b></td><td>63,615,778 ops/sec ±1.84% (89 runs sampled)
+</td></tr><tr><td><b>Int#toFixed</b></td><td>2,754,158 ops/sec ±1.27% (83 runs sampled)
+</td></tr><tr><td><b>modulo</b></td><td>63,226,615 ops/sec ±2.51% (74 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is a & a,a << 0,modulo
+
+

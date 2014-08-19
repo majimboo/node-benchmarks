@@ -104,8 +104,10 @@ Windows_NT x64 - 6.2.9200
 <table><tr><td><b>if else</b></td><td>8,090,182 ops/sec ±11.93% (41 runs sampled)
 </td></tr><tr><td><b>switch</b></td><td>4,101,627 ops/sec ±10.02% (52 runs sampled)
 </td></tr><tr><td><b>lookup table</b></td><td>7,697,645 ops/sec ±7.25% (52 runs sampled)
-Fastest is if else,lookup table
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is if else
 
 Windows_NT ia32 - 6.2.9200
 -----
@@ -117,6 +119,25 @@ Windows_NT ia32 - 6.2.9200
 <table><tr><td><b>if else</b></td><td>23,480,365 ops/sec ±7.15% (49 runs sampled)
 </td></tr><tr><td><b>switch</b></td><td>7,825,898 ops/sec ±5.20% (59 runs sampled)
 </td></tr><tr><td><b>lookup table</b></td><td>12,101,997 ops/sec ±7.09% (55 runs sampled)
-Fastest is if else
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is if else
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>if else</b></td><td>14,061,727 ops/sec ±12.71% (29 runs sampled)
+</td></tr><tr><td><b>switch</b></td><td>6,106,292 ops/sec ±12.58% (32 runs sampled)
+</td></tr><tr><td><b>lookup table</b></td><td>11,588,443 ops/sec ±12.16% (39 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is if else,lookup table
+
 

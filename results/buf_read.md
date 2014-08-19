@@ -152,6 +152,29 @@ Windows_NT ia32 - 6.2.9200
 </td></tr><tr><td><b>plainArray</b></td><td>5,249,535 ops/sec ±1.92% (88 runs sampled)
 </td></tr><tr><td><b>plainArray noAssert</b></td><td>8,227,405 ops/sec ±1.57% (83 runs sampled)
 </td></tr><tr><td><b>ArrayBuffer DataView</b></td><td>1,806,615 ops/sec ±1.63% (84 runs sampled)
-Fastest is plainArray noAssert
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is plainArray noAssert
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buf.read</b></td><td>141,928 ops/sec ±186.64% (30 runs sampled)
+</td></tr><tr><td><b>buf.myRead</b></td><td>2,041,602 ops/sec ±13.06% (31 runs sampled)
+</td></tr><tr><td><b>buf.read noAssert</b></td><td>2,289,938 ops/sec ±11.70% (41 runs sampled)
+</td></tr><tr><td><b>buf.myRead noAssert</b></td><td>5,409,651 ops/sec ±9.35% (45 runs sampled)
+</td></tr><tr><td><b>plainArray</b></td><td>5,571,137 ops/sec ±8.33% (62 runs sampled)
+</td></tr><tr><td><b>plainArray noAssert</b></td><td>14,794,668 ops/sec ±2.56% (90 runs sampled)
+</td></tr><tr><td><b>ArrayBuffer DataView</b></td><td>2,546,494 ops/sec ±1.79% (87 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is plainArray noAssert
+
 

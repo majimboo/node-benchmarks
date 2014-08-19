@@ -138,4 +138,21 @@ Windows_NT ia32 - 6.2.9200
 > Notes:
 > - Fastest is lodash#map
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>CoffeeScript comprehension</b></td><td>34,752 ops/sec ±14.07% (34 runs sampled)
+</td></tr><tr><td><b>for loop (with function call)</b></td><td>35,577 ops/sec ±11.17% (36 runs sampled)
+</td></tr><tr><td><b>Array#map</b></td><td>7,819 ops/sec ±11.95% (40 runs sampled)
+</td></tr><tr><td><b>underscore#map</b></td><td>9,766 ops/sec ±8.50% (42 runs sampled)
+</td></tr><tr><td><b>lodash#map</b></td><td>35,807 ops/sec ±6.98% (61 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#map,for loop (with function call),CoffeeScript comprehension
+
 

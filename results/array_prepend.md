@@ -104,8 +104,10 @@ Windows_NT x64 - 6.2.9200
 <table><tr><td><b>unshift</b></td><td>1,472,792 ops/sec ±10.77% (35 runs sampled)
 </td></tr><tr><td><b>prepend fn</b></td><td>811,445 ops/sec ±9.72% (51 runs sampled)
 </td></tr><tr><td><b>unshift no mutate</b></td><td>1,304,188 ops/sec ±8.55% (53 runs sampled)
-Fastest is unshift,unshift no mutate
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is unshift
 
 Windows_NT ia32 - 6.2.9200
 -----
@@ -117,6 +119,24 @@ Windows_NT ia32 - 6.2.9200
 <table><tr><td><b>unshift</b></td><td>4,511,974 ops/sec ±5.67% (49 runs sampled)
 </td></tr><tr><td><b>prepend fn</b></td><td>1,513,791 ops/sec ±5.27% (65 runs sampled)
 </td></tr><tr><td><b>unshift no mutate</b></td><td>2,571,529 ops/sec ±7.56% (59 runs sampled)
-Fastest is unshift
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is unshift
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>unshift</b></td><td>2,821,283 ops/sec ±12.12% (28 runs sampled)
+</td></tr><tr><td><b>prepend fn</b></td><td>1,067,112 ops/sec ±12.81% (34 runs sampled)
+</td></tr><tr><td><b>unshift no mutate</b></td><td>2,042,903 ops/sec ±6.75% (34 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is unshift
+
 

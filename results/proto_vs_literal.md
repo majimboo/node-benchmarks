@@ -111,8 +111,10 @@ Windows_NT x64 - 6.2.9200
 </td></tr><tr><td><b>literal</b></td><td>2,122,148 ops/sec ±9.75% (42 runs sampled)
 </td></tr><tr><td><b>prototype 1M</b></td><td>1.55 ops/sec ±15.26% (8 runs sampled)
 </td></tr><tr><td><b>literal 1M</b></td><td>1.81 ops/sec ±13.87% (9 runs sampled)
-Fastest is prototype
-</td></tr>
+</td></tr></table>
+
+> Notes:
+> - Fastest is prototype
 
 Windows_NT ia32 - 6.2.9200
 -----
@@ -125,9 +127,26 @@ Windows_NT ia32 - 6.2.9200
 </td></tr><tr><td><b>literal</b></td><td>5,295,380 ops/sec ±5.17% (53 runs sampled)
 </td></tr><tr><td><b>prototype 1M</b></td><td>3.50 ops/sec ±10.75% (14 runs sampled)
 </td></tr><tr><td><b>literal 1M</b></td><td>3.33 ops/sec ±8.89% (13 runs sampled)
-</td></tr>
-
-</table>
+</td></tr></table>
 
 > Notes:
 > - Fastest is prototype
+
+
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prototype</b></td><td>8,626,961 ops/sec ±12.32% (30 runs sampled)
+</td></tr><tr><td><b>literal</b></td><td>3,372,912 ops/sec ±14.56% (38 runs sampled)
+</td></tr><tr><td><b>prototype 1M</b></td><td>2.93 ops/sec ±10.09% (13 runs sampled)
+</td></tr><tr><td><b>literal 1M</b></td><td>2.29 ops/sec ±9.14% (12 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is prototype
+
+
