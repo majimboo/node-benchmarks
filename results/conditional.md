@@ -22,3 +22,15 @@ Linux x64 - 3.8.4-1-ARCH
 > Notes:
 > - Fastest is lookup table
 
+Linux x64 - 3.13.0-34-generic
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.30 GB</td><td>Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>if else</b></td><td>8,652,776 ops/sec ±15.31% (28 runs sampled)</td></tr><tr><td><b>switch</b></td><td>3,515,121 ops/sec ±13.77% (25 runs sampled)</td></tr><tr><td><b>lookup table</b></td><td>9,019,769 ops/sec ±15.23% (31 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is lookup table,if else
+

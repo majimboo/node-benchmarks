@@ -22,3 +22,15 @@ Linux x64 - 3.8.4-1-ARCH
 > Notes:
 > - Fastest is array pop
 
+Linux x64 - 3.13.0-34-generic
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.30 GB</td><td>Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>124,216 ops/sec ±16.18% (25 runs sampled)</td></tr><tr><td><b>splice -</b></td><td>183,785 ops/sec ±14.39% (41 runs sampled)</td></tr><tr><td><b>splice cached</b></td><td>203,508 ops/sec ±13.10% (46 runs sampled)</td></tr><tr><td><b>array delete</b></td><td>215,110 ops/sec ±11.93% (48 runs sampled)</td></tr><tr><td><b>array pop</b></td><td>375,656 ops/sec ±7.79% (65 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is array pop
+

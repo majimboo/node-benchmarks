@@ -22,3 +22,15 @@ Linux x64 - 3.8.4-1-ARCH
 > Notes:
 > - Fastest is prototype
 
+Linux x64 - 3.13.0-34-generic
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.30 GB</td><td>Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prototype</b></td><td>5,865,289 ops/sec ±16.43% (25 runs sampled)</td></tr><tr><td><b>literal</b></td><td>2,056,527 ops/sec ±14.97% (29 runs sampled)</td></tr><tr><td><b>prototype 1M</b></td><td>3.11 ops/sec ±24.00% (12 runs sampled)</td></tr><tr><td><b>literal 1M</b></td><td>2.50 ops/sec ±14.99% (11 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is prototype
+

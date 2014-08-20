@@ -22,3 +22,15 @@ Linux x64 - 3.8.4-1-ARCH
 > Notes:
 > - Fastest is buffer
 
+Linux x64 - 3.13.0-34-generic
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.30 GB</td><td>Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buffer</b></td><td>41,801 ops/sec ±20.33% (24 runs sampled)</td></tr><tr><td><b>string+</b></td><td>32,822 ops/sec ±20.36% (26 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is buffer,string+
+

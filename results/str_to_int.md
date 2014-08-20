@@ -22,3 +22,15 @@ Linux x64 - 3.8.4-1-ARCH
 > Notes:
 > - Fastest is a ^ 0
 
+Linux x64 - 3.13.0-34-generic
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.30 GB</td><td>Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>parseInt</b></td><td>6,866,085 ops/sec ±13.70% (26 runs sampled)</td></tr><tr><td><b>parseInt(a,10)</b></td><td>8,743,924 ops/sec ±13.95% (32 runs sampled)</td></tr><tr><td><b>Math#floor</b></td><td>6,618,107 ops/sec ±14.00% (30 runs sampled)</td></tr><tr><td><b>+a</b></td><td>6,462,128 ops/sec ±12.14% (36 runs sampled)</td></tr><tr><td><b>~~a</b></td><td>11,422,895 ops/sec ±7.74% (52 runs sampled)</td></tr><tr><td><b>a | 0</b></td><td>16,014,535 ops/sec ±5.73% (65 runs sampled)</td></tr><tr><td><b>a * 1</b></td><td>16,255,316 ops/sec ±4.92% (69 runs sampled)</td></tr><tr><td><b>a / 1</b></td><td>22,254,029 ops/sec ±3.53% (79 runs sampled)</td></tr><tr><td><b>a % Infinity</b></td><td>12,138,840 ops/sec ±2.24% (83 runs sampled)</td></tr><tr><td><b>a >> 0</b></td><td>19,542,820 ops/sec ±4.67% (80 runs sampled)</td></tr><tr><td><b>eval(a)</b></td><td>4,255,968 ops/sec ±5.78% (81 runs sampled)</td></tr><tr><td><b>a ^ 0</b></td><td>22,728,892 ops/sec ±3.54% (92 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is a ^ 0
+

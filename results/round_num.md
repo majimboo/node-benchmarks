@@ -22,3 +22,15 @@ Linux x64 - 3.8.4-1-ARCH
 > Notes:
 > - Fastest is modulo
 
+Linux x64 - 3.13.0-34-generic
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.30 GB</td><td>Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Math#floor</b></td><td>15,508,773 ops/sec ±14.67% (29 runs sampled)</td></tr><tr><td><b>parseInt</b></td><td>8,621,232 ops/sec ±14.66% (29 runs sampled)</td></tr><tr><td><b>parseInt(a,10)</b></td><td>11,089,023 ops/sec ±14.64% (30 runs sampled)</td></tr><tr><td><b>~~a</b></td><td>25,700,220 ops/sec ±13.57% (41 runs sampled)</td></tr><tr><td><b>a | a</b></td><td>38,621,387 ops/sec ±11.20% (56 runs sampled)</td></tr><tr><td><b>a | 0</b></td><td>53,300,500 ops/sec ±3.78% (77 runs sampled)</td></tr><tr><td><b>a & a</b></td><td>50,480,976 ops/sec ±4.32% (62 runs sampled)</td></tr><tr><td><b>a << 0</b></td><td>70,954,623 ops/sec ±3.66% (85 runs sampled)</td></tr><tr><td><b>Int#toFixed</b></td><td>3,362,564 ops/sec ±3.99% (91 runs sampled)</td></tr><tr><td><b>modulo</b></td><td>66,543,424 ops/sec ±3.28% (86 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is a << 0
+
