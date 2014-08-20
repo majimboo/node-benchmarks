@@ -223,3 +223,28 @@ Darwin x64 - 13.3.0
 > - Fastest is a ^ 0
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>parseInt</b></td><td>9,563,570 ops/sec ±15.44% (31 runs sampled)
+</td></tr><tr><td><b>parseInt(a,10)</b></td><td>11,792,162 ops/sec ±13.28% (31 runs sampled)
+</td></tr><tr><td><b>Math#floor</b></td><td>9,378,582 ops/sec ±13.07% (39 runs sampled)
+</td></tr><tr><td><b>+a</b></td><td>8,900,665 ops/sec ±8.96% (44 runs sampled)
+</td></tr><tr><td><b>~~a</b></td><td>11,748,181 ops/sec ±5.67% (60 runs sampled)
+</td></tr><tr><td><b>a | 0</b></td><td>20,063,813 ops/sec ±2.03% (88 runs sampled)
+</td></tr><tr><td><b>a * 1</b></td><td>20,034,019 ops/sec ±1.48% (85 runs sampled)
+</td></tr><tr><td><b>a / 1</b></td><td>20,526,458 ops/sec ±0.80% (95 runs sampled)
+</td></tr><tr><td><b>a % Infinity</b></td><td>13,433,909 ops/sec ±0.83% (89 runs sampled)
+</td></tr><tr><td><b>a >> 0</b></td><td>21,081,682 ops/sec ±1.43% (86 runs sampled)
+</td></tr><tr><td><b>eval(a)</b></td><td>5,239,875 ops/sec ±0.82% (95 runs sampled)
+</td></tr><tr><td><b>a ^ 0</b></td><td>23,150,156 ops/sec ±1.27% (90 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is a ^ 0
+
+

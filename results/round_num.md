@@ -205,3 +205,26 @@ Darwin x64 - 13.3.0
 > - Fastest is a & a,a << 0,modulo
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Math#floor</b></td><td>19,485,302 ops/sec ±14.09% (32 runs sampled)
+</td></tr><tr><td><b>parseInt</b></td><td>9,144,257 ops/sec ±15.99% (34 runs sampled)
+</td></tr><tr><td><b>parseInt(a,10)</b></td><td>14,360,562 ops/sec ±11.38% (41 runs sampled)
+</td></tr><tr><td><b>~~a</b></td><td>28,243,404 ops/sec ±8.59% (41 runs sampled)
+</td></tr><tr><td><b>a | a</b></td><td>35,609,415 ops/sec ±6.64% (58 runs sampled)
+</td></tr><tr><td><b>a | 0</b></td><td>53,210,792 ops/sec ±2.67% (81 runs sampled)
+</td></tr><tr><td><b>a & a</b></td><td>63,304,643 ops/sec ±2.60% (76 runs sampled)
+</td></tr><tr><td><b>a << 0</b></td><td>60,478,946 ops/sec ±1.12% (92 runs sampled)
+</td></tr><tr><td><b>Int#toFixed</b></td><td>2,710,430 ops/sec ±0.89% (89 runs sampled)
+</td></tr><tr><td><b>modulo</b></td><td>63,828,709 ops/sec ±2.66% (83 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is modulo,a & a
+
+

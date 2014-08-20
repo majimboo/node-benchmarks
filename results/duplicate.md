@@ -132,3 +132,18 @@ Darwin x64 - 13.3.0
 > - Fastest is eliminateDuplicates
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>filterDuplicates</b></td><td>21,845 ops/sec ±12.35% (32 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - eliminateDuplicates x 48,120 ops/sec ±16.05% (31 runs sampled)
+Fastest is eliminateDuplicates
+
+

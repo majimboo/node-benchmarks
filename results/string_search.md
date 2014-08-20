@@ -160,3 +160,21 @@ Darwin x64 - 13.3.0
 > - Fastest is regex#test precompiled
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>regex#test</b></td><td>4,217,224 ops/sec ±14.11% (30 runs sampled)
+</td></tr><tr><td><b>string#search</b></td><td>3,376,544 ops/sec ±12.41% (33 runs sampled)
+</td></tr><tr><td><b>string#match</b></td><td>2,764,181 ops/sec ±11.10% (37 runs sampled)
+</td></tr><tr><td><b>string#indexOf</b></td><td>964,568 ops/sec ±9.47% (46 runs sampled)
+</td></tr><tr><td><b>regex#test precompiled</b></td><td>9,879,078 ops/sec ±5.79% (57 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is regex#test precompiled
+
+

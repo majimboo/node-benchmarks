@@ -6,7 +6,7 @@ var underscore = require('underscore');
 var lodash     = require('lodash');
 
 // init
-var arr = [];
+var arr = [], larr;
 for (var i = 0; i < 1000; i++) {
   arr.push(i);
 }
@@ -85,20 +85,16 @@ suite
   });
 })
 
-.add('order', function() {
-  while( i = arr.shift() ) {
+.add('shift valid', function() {
+  larr = arr.slice(0);
+  while( (i = larr.shift()) !== undefined ) {
     someFn(i);
   }
 })
 
-.add('order validation', function() {
-  while( (i = arr.shift()) !== undefined ) {
-    someFn(i);
-  }
-})
-
-.add('pop', function() {
-  while( i = arr.pop() ) {
+.add('pop valid', function() {
+  larr = arr.slice(0);
+  while( (i = larr.pop()) !== undefined) {
     someFn(i);
   }
 })

@@ -141,3 +141,19 @@ Darwin x64 - 13.3.0
 > - Fastest is lodash#filter
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Array#filter</b></td><td>81,483 ops/sec ±12.14% (28 runs sampled)
+</td></tr><tr><td><b>underscore#filter</b></td><td>88,296 ops/sec ±17.81% (32 runs sampled)
+</td></tr><tr><td><b>lodash#filter</b></td><td>264,756 ops/sec ±11.29% (38 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#filter
+
+

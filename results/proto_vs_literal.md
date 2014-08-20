@@ -150,3 +150,20 @@ Darwin x64 - 13.3.0
 > - Fastest is prototype
 
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prototype</b></td><td>8,649,223 ops/sec ±13.68% (34 runs sampled)
+</td></tr><tr><td><b>literal</b></td><td>3,408,397 ops/sec ±14.70% (33 runs sampled)
+</td></tr><tr><td><b>prototype 1M</b></td><td>2.78 ops/sec ±17.76% (13 runs sampled)
+</td></tr><tr><td><b>literal 1M</b></td><td>2.56 ops/sec ±15.44% (12 runs sampled)
+</td></tr></table>
+
+> Notes:
+> - Fastest is prototype
+
+
