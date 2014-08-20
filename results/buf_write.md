@@ -10,3 +10,15 @@ Darwin x64 - 13.3.0
 > Notes:
 > - Fastest is buf.myWrite noAssert
 
+Linux x64 - 3.8.4-1-ARCH
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.30</td><td>519 MB</td><td>QEMU Virtual CPU version 1.0</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buf.write</b></td><td>404,689 ops/sec ±0.67% (8 runs sampled)</td></tr><tr><td><b>buf.myWrite</b></td><td>194,301 ops/sec ±133.23% (14 runs sampled)</td></tr><tr><td><b>buf.write noAssert</b></td><td>1,290,790 ops/sec ±6.03% (12 runs sampled)</td></tr><tr><td><b>buf.myWrite noAssert</b></td><td>1,459,208 ops/sec ±11.17% (12 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is buf.myWrite noAssert
+

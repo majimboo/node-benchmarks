@@ -10,3 +10,15 @@ Darwin x64 - 13.3.0
 > Notes:
 > - Fastest is lodash#filter
 
+Linux x64 - 3.8.4-1-ARCH
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.30</td><td>519 MB</td><td>QEMU Virtual CPU version 1.0</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Array#filter</b></td><td>7,377 ops/sec ±5.75% (40 runs sampled)</td></tr><tr><td><b>underscore#filter</b></td><td>7,070 ops/sec ±9.23% (26 runs sampled)</td></tr><tr><td><b>lodash#filter</b></td><td>25,726 ops/sec ±6.26% (66 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#filter
+

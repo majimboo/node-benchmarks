@@ -16,7 +16,7 @@ program
   .parse(process.argv);
 
 // var resultsPath = path.resolve(path.join(__dirname, '..', 'results'));
-var resultsPath = path.join(process.cwd(), program.path) || path.join(process.cwd(), 'results');
+var resultsPath = program.path ? path.join(process.cwd(), program.path) : path.join(process.cwd(), 'results');
 if(!fs.existsSync(resultsPath)){
     fs.mkdirSync(resultsPath);
 }
@@ -36,9 +36,8 @@ glob(path.join(scriptsPath, '*.js'), function (err, files) {
     files.forEach(function (file) {
         var docFile    = path.basename(file, '.js') + '.md';
         var resultPath = path.join(resultsPath, docFile);
-        var githubResultPath = path.join('https://github.com/majimboo/node-benchmarks/tree/master/results', docFile);
 
-        README += '- [' + path.basename(file, '.js') + '](' + githubResultPath + ')\n';
+        README += '- [' + path.basename(file, '.js') + '](' + docFile + ')\n';
 
         spawn(process.execPath, [file], function(err, stdout, stderr) {
             var header     = os.type() + ' ' + os.arch() + ' - ' + os.release() + '\n';

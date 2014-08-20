@@ -10,3 +10,15 @@ Darwin x64 - 13.3.0
 > Notes:
 > - Fastest is For loop cached,For loop basic
 
+Linux x64 - 3.8.4-1-ARCH
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.30</td><td>519 MB</td><td>QEMU Virtual CPU version 1.0</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>For loop basic</b></td><td>14,909 ops/sec ±4.53% (49 runs sampled)</td></tr><tr><td><b>While loop basic</b></td><td>15,016 ops/sec ±5.94% (57 runs sampled)</td></tr><tr><td><b>For loop cached</b></td><td>24,511 ops/sec ±3.31% (67 runs sampled)</td></tr><tr><td><b>For loop i--</b></td><td>3,958 ops/sec ±4.99% (23 runs sampled)</td></tr><tr><td><b>Do-while loop i--</b></td><td>12,904 ops/sec ±3.35% (51 runs sampled)</td></tr><tr><td><b>Do-while loop --i</b></td><td>8,910 ops/sec ±7.39% (40 runs sampled)</td></tr><tr><td><b>For..in loop</b></td><td>1,234 ops/sec ±1.09% (23 runs sampled)</td></tr><tr><td><b>Array#forEach</b></td><td>3,185 ops/sec ±9.58% (45 runs sampled)</td></tr><tr><td><b>underscore#each</b></td><td>3,696 ops/sec ±0.95% (35 runs sampled)</td></tr><tr><td><b>lodash#each</b></td><td>16,138 ops/sec ±5.58% (85 runs sampled)</td></tr><tr><td><b>shift valid</b></td><td>8,857 ops/sec ±2.15% (89 runs sampled)</td></tr><tr><td><b>pop valid</b></td><td>39,073 ops/sec ±1.22% (86 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is pop valid
+

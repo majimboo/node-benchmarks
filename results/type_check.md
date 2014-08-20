@@ -10,3 +10,15 @@ Darwin x64 - 13.3.0
 > Notes:
 > - Fastest is typeof
 
+Linux x64 - 3.8.4-1-ARCH
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.30</td><td>519 MB</td><td>QEMU Virtual CPU version 1.0</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>typeof</b></td><td>2,624,963 ops/sec ±1.81% (9 runs sampled)</td></tr><tr><td><b>constructor check</b></td><td>137,616 ops/sec ±6.84% (60 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is typeof
+
