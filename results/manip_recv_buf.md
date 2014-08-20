@@ -10,3 +10,15 @@ Darwin x64 - 13.3.0
 > Notes:
 > - Fastest is buffer,string+
 
+Linux x64 - 3.8.4-1-ARCH
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.30</td><td>519 MB</td><td>QEMU Virtual CPU version 1.0</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buffer</b></td><td>3,843 ops/sec ±25.29% (38 runs sampled)</td></tr><tr><td><b>string+</b></td><td>3,115 ops/sec ±24.43% (15 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is buffer
+

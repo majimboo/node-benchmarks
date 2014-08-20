@@ -10,3 +10,15 @@ Darwin x64 - 13.3.0
 > Notes:
 > - Fastest is prototype
 
+Linux x64 - 3.8.4-1-ARCH
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.30</td><td>519 MB</td><td>QEMU Virtual CPU version 1.0</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prototype</b></td><td>687,862 ops/sec ±1.81% (14 runs sampled)</td></tr><tr><td><b>literal</b></td><td>218,201 ops/sec ±9.66% (62 runs sampled)</td></tr><tr><td><b>prototype 1M</b></td><td>0.45 ops/sec ±46.58% (6 runs sampled)</td></tr><tr><td><b>literal 1M</b></td><td>0.62 ops/sec ±13.72% (6 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is prototype
+

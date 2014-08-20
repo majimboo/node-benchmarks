@@ -10,3 +10,15 @@ Darwin x64 - 13.3.0
 > Notes:
 > - Fastest is direct
 
+Linux x64 - 3.8.4-1-ARCH
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.30</td><td>519 MB</td><td>QEMU Virtual CPU version 1.0</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>apply</b></td><td>76,147 ops/sec ±4.05% (51 runs sampled)</td></tr><tr><td><b>call</b></td><td>477,766 ops/sec ±14.47% (62 runs sampled)</td></tr><tr><td><b>bind</b></td><td>21,315 ops/sec ±10.98% (35 runs sampled)</td></tr><tr><td><b>direct</b></td><td>1,051,219 ops/sec ±13.77% (16 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is direct
+
