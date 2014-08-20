@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is array pop
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>82,935 ops/sec ±10.17% (46 runs sampled)</td></tr><tr><td><b>splice -</b></td><td>81,438 ops/sec ±9.91% (43 runs sampled)</td></tr><tr><td><b>splice cached</b></td><td>102,486 ops/sec ±8.86% (54 runs sampled)</td></tr><tr><td><b>array delete</b></td><td>115,404 ops/sec ±5.73% (61 runs sampled)</td></tr><tr><td><b>array pop</b></td><td>167,433 ops/sec ±3.36% (79 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is array pop
+

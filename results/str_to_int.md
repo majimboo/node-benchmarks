@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is a ^ 0
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>parseInt</b></td><td>13,364,106 ops/sec ±9.89% (40 runs sampled)</td></tr><tr><td><b>parseInt(a,10)</b></td><td>15,778,920 ops/sec ±9.74% (41 runs sampled)</td></tr><tr><td><b>Math#floor</b></td><td>34,115,459 ops/sec ±7.78% (53 runs sampled)</td></tr><tr><td><b>+a</b></td><td>10,257,211 ops/sec ±5.46% (54 runs sampled)</td></tr><tr><td><b>~~a</b></td><td>15,367,718 ops/sec ±4.34% (77 runs sampled)</td></tr><tr><td><b>a | 0</b></td><td>18,399,973 ops/sec ±2.73% (86 runs sampled)</td></tr><tr><td><b>a * 1</b></td><td>18,300,395 ops/sec ±1.74% (90 runs sampled)</td></tr><tr><td><b>a / 1</b></td><td>18,492,224 ops/sec ±1.45% (84 runs sampled)</td></tr><tr><td><b>a % Infinity</b></td><td>11,598,186 ops/sec ±1.61% (86 runs sampled)</td></tr><tr><td><b>a >> 0</b></td><td>19,363,211 ops/sec ±2.81% (87 runs sampled)</td></tr><tr><td><b>eval(a)</b></td><td>4,523,361 ops/sec ±1.30% (97 runs sampled)</td></tr><tr><td><b>a ^ 0</b></td><td>18,466,651 ops/sec ±1.05% (90 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is Math#floor
+

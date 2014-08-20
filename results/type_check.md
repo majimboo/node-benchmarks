@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is typeof
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>typeof</b></td><td>31,969,072 ops/sec ±10.88% (45 runs sampled)</td></tr><tr><td><b>constructor check</b></td><td>31,118,876 ops/sec ±9.52% (46 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is typeof,constructor check
+

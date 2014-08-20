@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is lodash#map,CoffeeScript comprehension
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>CoffeeScript comprehension</b></td><td>54,031 ops/sec ±11.05% (43 runs sampled)</td></tr><tr><td><b>for loop (with function call)</b></td><td>56,617 ops/sec ±8.42% (46 runs sampled)</td></tr><tr><td><b>Array#map</b></td><td>7,428 ops/sec ±7.36% (50 runs sampled)</td></tr><tr><td><b>underscore#map</b></td><td>9,554 ops/sec ±5.74% (53 runs sampled)</td></tr><tr><td><b>lodash#map</b></td><td>123,316 ops/sec ±4.19% (79 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#map
+

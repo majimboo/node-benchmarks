@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is direct
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>apply</b></td><td>119,979 ops/sec ±8.78% (38 runs sampled)</td></tr><tr><td><b>call</b></td><td>7,167,920 ops/sec ±9.35% (46 runs sampled)</td></tr><tr><td><b>bind</b></td><td>212,717 ops/sec ±6.65% (54 runs sampled)</td></tr><tr><td><b>direct</b></td><td>18,126,152 ops/sec ±6.27% (62 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is direct
+

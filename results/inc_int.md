@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is inc fn
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>i++</b></td><td>29,668,760 ops/sec ±9.66% (39 runs sampled)</td></tr><tr><td><b>++i</b></td><td>30,506,819 ops/sec ±9.79% (46 runs sampled)</td></tr><tr><td><b>i += 1</b></td><td>39,480,089 ops/sec ±7.53% (53 runs sampled)</td></tr><tr><td><b>inc fn</b></td><td>42,329,773 ops/sec ±5.20% (55 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is inc fn,i += 1
+

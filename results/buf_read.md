@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is plainArray noAssert
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buf.read</b></td><td>7,409,856 ops/sec ±8.92% (38 runs sampled)</td></tr><tr><td><b>buf.myRead</b></td><td>4,312,023 ops/sec ±9.02% (36 runs sampled)</td></tr><tr><td><b>buf.read noAssert</b></td><td>29,601,615 ops/sec ±8.89% (46 runs sampled)</td></tr><tr><td><b>buf.myRead noAssert</b></td><td>15,583,335 ops/sec ±5.83% (61 runs sampled)</td></tr><tr><td><b>plainArray</b></td><td>10,735,807 ops/sec ±5.70% (66 runs sampled)</td></tr><tr><td><b>plainArray noAssert</b></td><td>69,824,083 ops/sec ±3.26% (79 runs sampled)</td></tr><tr><td><b>ArrayBuffer DataView</b></td><td>2,640,185 ops/sec ±1.69% (92 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is plainArray noAssert
+

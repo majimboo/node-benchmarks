@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is unshift
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>unshift</b></td><td>2,553,725 ops/sec ±9.18% (42 runs sampled)</td></tr><tr><td><b>prepend fn</b></td><td>2,350,615 ops/sec ±9.03% (43 runs sampled)</td></tr><tr><td><b>unshift no mutate</b></td><td>1,901,669 ops/sec ±7.44% (49 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is unshift,prepend fn
+

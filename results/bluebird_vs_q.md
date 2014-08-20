@@ -31,3 +31,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is bluebird
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>bluebird</b></td><td>524,413 ops/sec ±14.56% (42 runs sampled)</td></tr><tr><td><b>q</b></td><td>14,866 ops/sec ±32.22% (12 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is bluebird
+

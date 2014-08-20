@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is prototype
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prototype</b></td><td>21,178,660 ops/sec ±11.24% (48 runs sampled)</td></tr><tr><td><b>literal</b></td><td>3,733,553 ops/sec ±9.42% (36 runs sampled)</td></tr><tr><td><b>prototype 1M</b></td><td>4.26 ops/sec ±16.34% (17 runs sampled)</td></tr><tr><td><b>literal 1M</b></td><td>3.88 ops/sec ±11.23% (15 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is prototype
+

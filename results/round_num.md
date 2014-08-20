@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is a << 0
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Math#floor</b></td><td>29,052,926 ops/sec ±9.47% (46 runs sampled)</td></tr><tr><td><b>parseInt</b></td><td>15,034,286 ops/sec ±9.59% (41 runs sampled)</td></tr><tr><td><b>parseInt(a,10)</b></td><td>20,285,084 ops/sec ±7.36% (51 runs sampled)</td></tr><tr><td><b>~~a</b></td><td>41,219,894 ops/sec ±6.24% (56 runs sampled)</td></tr><tr><td><b>a | a</b></td><td>51,458,364 ops/sec ±4.37% (80 runs sampled)</td></tr><tr><td><b>a | 0</b></td><td>66,496,436 ops/sec ±1.81% (96 runs sampled)</td></tr><tr><td><b>a & a</b></td><td>64,723,610 ops/sec ±1.94% (88 runs sampled)</td></tr><tr><td><b>a << 0</b></td><td>66,837,878 ops/sec ±1.45% (85 runs sampled)</td></tr><tr><td><b>Int#toFixed</b></td><td>2,688,255 ops/sec ±2.63% (88 runs sampled)</td></tr><tr><td><b>modulo</b></td><td>74,352,206 ops/sec ±1.88% (92 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is modulo
+

@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is buffer,string
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buffer</b></td><td>23,794 ops/sec ±13.21% (45 runs sampled)</td></tr><tr><td><b>string</b></td><td>370,373 ops/sec ±33.90% (28 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is string
+

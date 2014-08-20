@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is For loop cached,For loop basic
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>For loop basic</b></td><td>333,172 ops/sec ±9.49% (46 runs sampled)</td></tr><tr><td><b>While loop basic</b></td><td>350,422 ops/sec ±9.32% (53 runs sampled)</td></tr><tr><td><b>For loop cached</b></td><td>417,386 ops/sec ±7.49% (61 runs sampled)</td></tr><tr><td><b>For loop i--</b></td><td>103,999 ops/sec ±5.71% (59 runs sampled)</td></tr><tr><td><b>Do-while loop i--</b></td><td>500,405 ops/sec ±2.89% (81 runs sampled)</td></tr><tr><td><b>Do-while loop --i</b></td><td>168,926 ops/sec ±1.67% (91 runs sampled)</td></tr><tr><td><b>For..in loop</b></td><td>8,418 ops/sec ±1.70% (95 runs sampled)</td></tr><tr><td><b>Array#forEach</b></td><td>20,569 ops/sec ±1.58% (91 runs sampled)</td></tr><tr><td><b>underscore#each</b></td><td>20,132 ops/sec ±2.58% (92 runs sampled)</td></tr><tr><td><b>lodash#each</b></td><td>87,349 ops/sec ±2.17% (90 runs sampled)</td></tr><tr><td><b>shift valid</b></td><td>5,980 ops/sec ±0.82% (96 runs sampled)</td></tr><tr><td><b>pop valid</b></td><td>176,230 ops/sec ±1.37% (89 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is Do-while loop i--
+

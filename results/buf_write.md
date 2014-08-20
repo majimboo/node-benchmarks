@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is buf.myWrite noAssert
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buf.write</b></td><td>11,881,305 ops/sec ±9.46% (37 runs sampled)</td></tr><tr><td><b>buf.myWrite</b></td><td>8,485,863 ops/sec ±8.30% (39 runs sampled)</td></tr><tr><td><b>buf.write noAssert</b></td><td>31,382,399 ops/sec ±6.49% (53 runs sampled)</td></tr><tr><td><b>buf.myWrite noAssert</b></td><td>20,069,461 ops/sec ±4.88% (54 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is buf.write noAssert
+

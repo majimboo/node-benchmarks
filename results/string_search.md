@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is regex#test precompiled
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>regex#test</b></td><td>5,938,237 ops/sec ±10.27% (48 runs sampled)</td></tr><tr><td><b>string#search</b></td><td>4,319,201 ops/sec ±9.70% (45 runs sampled)</td></tr><tr><td><b>string#match</b></td><td>3,625,816 ops/sec ±7.08% (44 runs sampled)</td></tr><tr><td><b>string#indexOf</b></td><td>2,123,800 ops/sec ±5.88% (55 runs sampled)</td></tr><tr><td><b>regex#test precompiled</b></td><td>13,949,004 ops/sec ±4.83% (72 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is regex#test precompiled
+

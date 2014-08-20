@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is lodash#filter
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Array#filter</b></td><td>82,568 ops/sec ±8.95% (33 runs sampled)</td></tr><tr><td><b>underscore#filter</b></td><td>80,396 ops/sec ±9.62% (34 runs sampled)</td></tr><tr><td><b>lodash#filter</b></td><td>368,461 ops/sec ±9.14% (50 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#filter
+

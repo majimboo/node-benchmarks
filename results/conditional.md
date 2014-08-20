@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is lookup table,if else
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>if else</b></td><td>31,263,817 ops/sec ±11.10% (45 runs sampled)</td></tr><tr><td><b>switch</b></td><td>32,227,559 ops/sec ±9.25% (42 runs sampled)</td></tr><tr><td><b>lookup table</b></td><td>17,833,511 ops/sec ±7.22% (53 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is switch,if else
+

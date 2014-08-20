@@ -34,3 +34,15 @@ Linux x64 - 3.13.0-34-generic
 > Notes:
 > - Fastest is eliminateDuplicates
 
+Darwin x64 - 13.2.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>4.29 GB</td><td>Intel(R) Core(TM) i7-3615QM CPU @ 2.30GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>filterDuplicates</b></td><td>24,592 ops/sec ±9.05% (39 runs sampled)</td></tr><tr><td><b>eliminateDuplicates</b></td><td>26,904 ops/sec ±9.85% (40 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is eliminateDuplicates,filterDuplicates
+

@@ -72,3 +72,16 @@ You can find the result sets [here](https://github.com/majimboo/node_benchmarks/
 - [str_to_int](https://github.com/majimboo/node-benchmarks/tree/master/results/str_to_int.md)
 - [string_search](https://github.com/majimboo/node-benchmarks/tree/master/results/string_search.md)
 - [type_check](https://github.com/majimboo/node-benchmarks/tree/master/results/type_check.md)
+
+Contribute
+----------
+
+    // first fork this repo
+    $ git clone git@github.com:YOURUSERNAME/node-benchmarks.git
+    $ cd node-benchmarks
+    $ npm install
+    $ bin/node-benchmarks
+    $ git add .
+    $ git commit -m 'added new results'
+    $ git push origin master
+    // last send pull request
