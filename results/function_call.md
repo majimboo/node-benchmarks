@@ -22,3 +22,15 @@ Linux x64 - 3.8.4-1-ARCH
 > Notes:
 > - Fastest is direct
 
+Linux x64 - 3.13.0-34-generic
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.30 GB</td><td>Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>apply</b></td><td>566,853 ops/sec ±16.41% (26 runs sampled)</td></tr><tr><td><b>call</b></td><td>5,463,521 ops/sec ±15.63% (25 runs sampled)</td></tr><tr><td><b>bind</b></td><td>182,237 ops/sec ±14.19% (32 runs sampled)</td></tr><tr><td><b>direct</b></td><td>9,101,004 ops/sec ±10.75% (33 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is direct
+

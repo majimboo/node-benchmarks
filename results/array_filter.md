@@ -22,3 +22,15 @@ Linux x64 - 3.8.4-1-ARCH
 > Notes:
 > - Fastest is lodash#filter
 
+Linux x64 - 3.13.0-34-generic
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.30 GB</td><td>Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>Array#filter</b></td><td>59,032 ops/sec ±16.83% (25 runs sampled)</td></tr><tr><td><b>underscore#filter</b></td><td>60,934 ops/sec ±18.15% (31 runs sampled)</td></tr><tr><td><b>lodash#filter</b></td><td>152,863 ops/sec ±12.80% (26 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#filter
+

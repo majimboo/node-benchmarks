@@ -22,3 +22,15 @@ Linux x64 - 3.8.4-1-ARCH
 > Notes:
 > - Fastest is for Object#keys.length
 
+Linux x64 - 3.13.0-34-generic
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.30 GB</td><td>Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>prop in Object</b></td><td>173,260 ops/sec ±14.62% (29 runs sampled)</td></tr><tr><td><b>forEach Object#keys</b></td><td>265,177 ops/sec ±14.08% (26 runs sampled)</td></tr><tr><td><b>for Object#keys.length</b></td><td>598,904 ops/sec ±12.76% (35 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is for Object#keys.length
+

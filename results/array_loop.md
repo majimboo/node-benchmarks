@@ -22,3 +22,15 @@ Linux x64 - 3.8.4-1-ARCH
 > Notes:
 > - Fastest is pop valid
 
+Linux x64 - 3.13.0-34-generic
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.30 GB</td><td>Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>For loop basic</b></td><td>185,947 ops/sec ±16.45% (32 runs sampled)</td></tr><tr><td><b>While loop basic</b></td><td>164,200 ops/sec ±15.83% (24 runs sampled)</td></tr><tr><td><b>For loop cached</b></td><td>218,918 ops/sec ±12.13% (37 runs sampled)</td></tr><tr><td><b>For loop i--</b></td><td>29,449 ops/sec ±10.82% (35 runs sampled)</td></tr><tr><td><b>Do-while loop i--</b></td><td>99,298 ops/sec ±10.20% (51 runs sampled)</td></tr><tr><td><b>Do-while loop --i</b></td><td>76,253 ops/sec ±4.43% (69 runs sampled)</td></tr><tr><td><b>For..in loop</b></td><td>8,295 ops/sec ±6.07% (62 runs sampled)</td></tr><tr><td><b>Array#forEach</b></td><td>24,476 ops/sec ±5.22% (81 runs sampled)</td></tr><tr><td><b>underscore#each</b></td><td>25,298 ops/sec ±2.72% (89 runs sampled)</td></tr><tr><td><b>lodash#each</b></td><td>62,495 ops/sec ±3.93% (82 runs sampled)</td></tr><tr><td><b>shift valid</b></td><td>24,220 ops/sec ±5.78% (87 runs sampled)</td></tr><tr><td><b>pop valid</b></td><td>113,093 ops/sec ±3.51% (82 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is For loop cached,For loop basic
+

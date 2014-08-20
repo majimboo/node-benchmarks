@@ -22,3 +22,15 @@ Linux x64 - 3.8.4-1-ARCH
 > Notes:
 > - Fastest is buf.myWrite noAssert
 
+Linux x64 - 3.13.0-34-generic
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.29</td><td>8.30 GB</td><td>Intel(R) Core(TM) i5-4200M CPU @ 2.50GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>buf.write</b></td><td>2,836,134 ops/sec ±15.93% (26 runs sampled)</td></tr><tr><td><b>buf.myWrite</b></td><td>3,478,758 ops/sec ±16.18% (27 runs sampled)</td></tr><tr><td><b>buf.write noAssert</b></td><td>7,137,474 ops/sec ±15.01% (31 runs sampled)</td></tr><tr><td><b>buf.myWrite noAssert</b></td><td>11,312,602 ops/sec ±12.61% (43 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is buf.myWrite noAssert
+
