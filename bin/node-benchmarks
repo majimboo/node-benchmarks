@@ -1,0 +1,107 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var fs = require('fs');
+var os = require('os');
+var path = require('path');
+var glob = require('glob');
+var spawn = require('child_process').execFile;
+var program = require('commander');
+var packjson = require('../package');
+
+program
+  .version(packjson.version)
+  .option('-p, --path [path]', 'Path to output the results to')
+  .parse(process.argv);
+
+// var resultsPath = path.resolve(path.join(__dirname, '..', 'results'));
+var resultsPath = path.join(process.cwd(), program.path) || path.join(process.cwd(), 'results');
+if(!fs.existsSync(resultsPath)){
+    fs.mkdirSync(resultsPath);
+}
+
+var scriptsPath = path.resolve(path.join(__dirname, '..', 'scripts'));
+
+// fake it
+// fs.appendFileSync = function() {};
+
+glob(path.join(scriptsPath, '*.js'), function (err, files) {
+    var done = 0;
+    var total = files.length;
+
+    var README = '';
+
+    // execute each node script
+    files.forEach(function (file) {
+        var docFile    = path.basename(file, '.js') + '.md';
+        var resultPath = path.join(resultsPath, docFile);
+        var githubResultPath = path.join('https://github.com/majimboo/node-benchmarks/tree/master/results', docFile);
+
+        README += '- [' + path.basename(file, '.js') + '](' + githubResultPath + ')\n';
+
+        spawn(process.execPath, [file], function(err, stdout, stderr) {
+            var header     = os.type() + ' ' + os.arch() + ' - ' + os.release() + '\n';
+
+            fs.appendFileSync(resultPath, header);
+            fs.appendFileSync(resultPath, '-----\n\n');
+            fs.appendFileSync(resultPath, createHeader());
+            fs.appendFileSync(resultPath, '\n\n');
+            fs.appendFileSync(resultPath, '#### Benchmark Results ####\n\n');
+            fs.appendFileSync(resultPath, '<table>');
+
+            var lines = stdout.split('\n');
+
+            lines.forEach(function(data) {
+                if (data.length) {
+                    var isDone = data.toString().indexOf('Fastest is') > -1;
+
+                    var resulta = data.toString().split(' x ');
+                    if (resulta[0] && resulta[1] && !isDone) {
+                        fs.appendFileSync(resultPath, '<tr>');
+                        fs.appendFileSync(resultPath, '<td><b>' + resulta[0] + '</b></td>');
+                        fs.appendFileSync(resultPath, '<td>' + resulta[1] + '</td>');
+                        fs.appendFileSync(resultPath, '</tr>');
+                    }
+
+                    if (isDone) {
+                        fs.appendFileSync(resultPath, '</table>\n\n');
+                        fs.appendFileSync(resultPath, '> Notes:\n');
+                        fs.appendFileSync(resultPath, '> - ' + data);
+                    }
+                }
+            });
+
+            fs.appendFileSync(resultPath, '\n\n');
+            done++;
+            console.log('['+done+'/'+total+']\t' + path.basename(file, '.js'));
+        });
+    });
+
+    fs.writeFileSync(path.join(resultsPath, 'README.md'), README);
+});
+
+function createHeader(data) {
+    var html = '<table>' +
+        '<tr>' +
+            '<td><b>node</b></td>' +
+            '<td><b>memory</b></td>' +
+            '<td><b>cpu</b></td>' +
+        '</tr>' +
+        '<tr>' +
+            '<td>' + process.version + '</td>' +
+            '<td>' + bytesToSize(os.totalmem()) + '</td>' +
+            '<td>' + os.cpus()[0].model + '</td>' +
+        '</tr>' +
+    '</table>';
+
+    return html;
+}
+
+function bytesToSize(bytes) {
+   if(bytes == 0) return '0 Byte';
+   var k = 1000;
+   var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+   var i = Math.floor(Math.log(bytes) / Math.log(k));
+   return (bytes / Math.pow(k, i)).toPrecision(3) + ' ' + sizes[i];
+}

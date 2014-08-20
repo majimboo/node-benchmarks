@@ -1,11 +1,12 @@
 {
   "name": "benchmarks",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "Node.JS community benchmarks result sets",
   "dependencies": {
     "benchmark": "^1.0.0",
     "bluebird": "^2.3.0",
     "chai": "^1.9.1",
+    "commander": "^2.3.0",
     "glob": "^4.0.5",
     "lodash": "^2.4.1",
     "microtime": "^1.0.1",
@@ -13,7 +14,11 @@
     "q": "^1.0.1",
     "underscore": "^1.6.0"
   },
+  "bin": {
+    "node-benchmarks": "./bin/node-benchmarks"
+  },
   "scripts": {
+    "start": "node ./bin/node-benchmarks",
     "test": "./node_modules/mocha/bin/mocha"
   },
   "devDependencies": {},

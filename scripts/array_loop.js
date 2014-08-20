@@ -17,13 +17,13 @@ function someFn(ix) {
 
 // add tests
 suite
-.add('For loop, basic', function() {
+.add('For loop basic', function() {
   for (var i = 0; i < arr.length; i++) {
     someFn(arr[i]);
   }
 })
 
-.add('While loop, basic', function() {
+.add('While loop basic', function() {
   var i = 0;
   while (i < arr.length) {
     someFn(arr[i]);
@@ -31,19 +31,19 @@ suite
   }
 })
 
-.add('For loop, cached', function() {
+.add('For loop cached', function() {
   for (var i = 0, len = arr.length; i < len; i++) {
     someFn(arr[i]);
   }
 })
 
-.add('For loop, i--', function() {
+.add('For loop i--', function() {
   for (var i = arr.length; i > 0; i--) {
     someFn(arr[i]);
   }
 })
 
-.add('Do-while loop, i--', function() {
+.add('Do-while loop i--', function() {
   var i = arr.length - 1;
   do {
     someFn(arr[i]);
@@ -51,7 +51,7 @@ suite
   while (i--);
 })
 
-.add('Do-while loop, --i', function() {
+.add('Do-while loop --i', function() {
   var i = arr.length;
   if (i > 0) {
     do {
