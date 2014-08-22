@@ -1,6 +1,6 @@
 {
   "name": "benchmarks",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Node.JS community benchmarks result sets",
   "dependencies": {
     "benchmark": "^1.0.0",
@@ -24,12 +24,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/majimboo/node_benchmarks.git"
+    "url": "https://github.com/majimboo/node-benchmarks.git"
   },
   "author": "Majid Arif Siddiqui <me@majidarif.com> (http://blog.majidarif.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/majimboo/node_benchmarks/issues"
+    "url": "https://github.com/majimboo/node-benchmarks/issues"
   },
-  "homepage": "https://github.com/majimboo/node_benchmarks"
+  "homepage": "https://github.com/majimboo/node-benchmarks"
 }

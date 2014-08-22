@@ -85,3 +85,8 @@ Contribute
     $ git commit -m 'added new results'
     $ git push origin master
     // last send pull request
+
+History
+-------
+
+Can be seen [here](HISTORY.md).
