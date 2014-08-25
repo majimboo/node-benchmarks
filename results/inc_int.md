@@ -46,3 +46,15 @@ Darwin x64 - 13.2.0
 > Notes:
 > - Fastest is inc fn,i += 1
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>i++</b></td><td>19,425,753 ops/sec ±13.35% (28 runs sampled)</td></tr><tr><td><b>++i</b></td><td>18,682,185 ops/sec ±11.85% (26 runs sampled)</td></tr><tr><td><b>i += 1</b></td><td>20,513,025 ops/sec ±5.89% (33 runs sampled)</td></tr><tr><td><b>inc fn</b></td><td>27,783,804 ops/sec ±7.23% (35 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is inc fn
+

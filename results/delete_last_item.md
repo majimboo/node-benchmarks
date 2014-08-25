@@ -46,3 +46,15 @@ Darwin x64 - 13.2.0
 > Notes:
 > - Fastest is array pop
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>48,106 ops/sec ±6.09% (24 runs sampled)</td></tr><tr><td><b>splice -</b></td><td>49,259 ops/sec ±12.18% (29 runs sampled)</td></tr><tr><td><b>splice cached</b></td><td>62,219 ops/sec ±9.02% (35 runs sampled)</td></tr><tr><td><b>array delete</b></td><td>72,430 ops/sec ±6.10% (37 runs sampled)</td></tr><tr><td><b>array pop</b></td><td>120,820 ops/sec ±5.26% (55 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is array pop
+

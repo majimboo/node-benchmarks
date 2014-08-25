@@ -46,3 +46,15 @@ Darwin x64 - 13.2.0
 > Notes:
 > - Fastest is direct
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>apply</b></td><td>95,298 ops/sec ±8.89% (25 runs sampled)</td></tr><tr><td><b>call</b></td><td>4,451,819 ops/sec ±10.78% (25 runs sampled)</td></tr><tr><td><b>bind</b></td><td>160,159 ops/sec ±9.86% (34 runs sampled)</td></tr><tr><td><b>direct</b></td><td>9,843,773 ops/sec ±6.25% (36 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is direct
+

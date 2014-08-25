@@ -46,3 +46,15 @@ Darwin x64 - 13.2.0
 > Notes:
 > - Fastest is object subscript delete
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>splice</b></td><td>1,803,813 ops/sec ±8.86% (25 runs sampled)</td></tr><tr><td><b>object delete</b></td><td>1,890,900 ops/sec ±10.65% (25 runs sampled)</td></tr><tr><td><b>array delete</b></td><td>2,496,059 ops/sec ±10.69% (34 runs sampled)</td></tr><tr><td><b>object subscript delete</b></td><td>3,025,076 ops/sec ±5.82% (38 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is object subscript delete
+

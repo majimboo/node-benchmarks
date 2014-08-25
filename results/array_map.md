@@ -46,3 +46,15 @@ Darwin x64 - 13.2.0
 > Notes:
 > - Fastest is lodash#map
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>CoffeeScript comprehension</b></td><td>31,861 ops/sec ±8.77% (25 runs sampled)</td></tr><tr><td><b>for loop (with function call)</b></td><td>33,644 ops/sec ±12.71% (26 runs sampled)</td></tr><tr><td><b>Array#map</b></td><td>5,550 ops/sec ±9.94% (35 runs sampled)</td></tr><tr><td><b>underscore#map</b></td><td>7,188 ops/sec ±7.87% (39 runs sampled)</td></tr><tr><td><b>lodash#map</b></td><td>80,318 ops/sec ±5.12% (56 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is lodash#map
+

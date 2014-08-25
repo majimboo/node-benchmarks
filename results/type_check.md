@@ -46,3 +46,15 @@ Darwin x64 - 13.2.0
 > Notes:
 > - Fastest is typeof,constructor check
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.11.13</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>typeof</b></td><td>20,369,303 ops/sec ±9.57% (25 runs sampled)</td></tr><tr><td><b>constructor check</b></td><td>16,974,852 ops/sec ±13.84% (29 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is typeof
+
