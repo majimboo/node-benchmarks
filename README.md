@@ -20,6 +20,7 @@ Usage
         -h, --help         output usage information
         -V, --version      output the version number
         -p, --path [path]  Path to output the results to
+        -d, --dryrun       Run the benchmark but dont generate files
 
     $ node-benchmarks -p myresults/
     [1/21]  type_check
@@ -45,6 +46,23 @@ Usage
     [21/21] str_to_int
 
 Your benchmark results will be appended to the result set.
+
+    $ node-benchmarks --dryrun
+    typeof x 22,545,486 ops/sec ±11.66% (30 runs sampled)
+    constructor check x 18,023,021 ops/sec ±9.23% (27 runs sampled)
+    Fastest is typeof
+
+    [1/22]  type_check
+    buffer x 10,889 ops/sec ±15.81% (28 runs sampled)
+    string+ x 53,569 ops/sec ±21.72% (27 runs sampled)
+    Fastest is string+
+
+    [2/22]  manip_recv_buf
+    filterDuplicates x 17,466 ops/sec ±7.64% (26 runs sampled)
+    eliminateDuplicates x 19,910 ops/sec ±7.11% (28 runs sampled)
+    Fastest is eliminateDuplicates
+
+When `--dryrun` is used, no files are generated and the results are shown on the console.
 
 Results
 -------
