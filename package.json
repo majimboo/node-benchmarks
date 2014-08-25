@@ -1,6 +1,6 @@
 {
   "name": "benchmarks",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node.JS community benchmarks result sets",
   "dependencies": {
     "benchmark": "^1.0.0",
