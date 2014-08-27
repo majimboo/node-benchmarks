@@ -58,3 +58,15 @@ Darwin x64 - 13.3.0
 > Notes:
 > - Fastest is unshift,prepend fn
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.31</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>unshift</b></td><td>2,156,574 ops/sec ±18.27% (26 runs sampled)</td></tr><tr><td><b>prepend fn</b></td><td>949,547 ops/sec ±14.34% (27 runs sampled)</td></tr><tr><td><b>unshift no mutate</b></td><td>1,910,564 ops/sec ±16.14% (31 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is unshift,unshift no mutate
+

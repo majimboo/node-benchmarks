@@ -58,3 +58,15 @@ Darwin x64 - 13.3.0
 > Notes:
 > - Fastest is Do-while loop i--
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.31</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>For loop basic</b></td><td>156,976 ops/sec ±18.34% (28 runs sampled)</td></tr><tr><td><b>While loop basic</b></td><td>168,397 ops/sec ±16.82% (28 runs sampled)</td></tr><tr><td><b>For loop cached</b></td><td>196,143 ops/sec ±14.56% (34 runs sampled)</td></tr><tr><td><b>For loop i--</b></td><td>41,603 ops/sec ±15.16% (50 runs sampled)</td></tr><tr><td><b>Do-while loop i--</b></td><td>140,002 ops/sec ±6.86% (71 runs sampled)</td></tr><tr><td><b>Do-while loop --i</b></td><td>89,851 ops/sec ±3.10% (90 runs sampled)</td></tr><tr><td><b>For..in loop</b></td><td>10,801 ops/sec ±1.17% (89 runs sampled)</td></tr><tr><td><b>Array#forEach</b></td><td>24,575 ops/sec ±0.74% (93 runs sampled)</td></tr><tr><td><b>underscore#each</b></td><td>25,541 ops/sec ±1.01% (92 runs sampled)</td></tr><tr><td><b>lodash#each</b></td><td>69,962 ops/sec ±1.57% (90 runs sampled)</td></tr><tr><td><b>shift valid</b></td><td>25,117 ops/sec ±0.88% (91 runs sampled)</td></tr><tr><td><b>pop valid</b></td><td>111,591 ops/sec ±1.02% (87 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is For loop cached,While loop basic
+

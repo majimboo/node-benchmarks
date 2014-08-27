@@ -58,3 +58,15 @@ Darwin x64 - 13.3.0
 > Notes:
 > - Fastest is switch,if else
 
+Darwin x64 - 13.3.0
+-----
+
+<table><tr><td><b>node</b></td><td><b>memory</b></td><td><b>cpu</b></td></tr><tr><td>v0.10.31</td><td>8.59 GB</td><td>Intel(R) Core(TM) i5-2500S CPU @ 2.70GHz</td></tr></table>
+
+#### Benchmark Results ####
+
+<table><tr><td><b>if else</b></td><td>14,418,388 ops/sec ±20.75% (30 runs sampled)</td></tr><tr><td><b>switch</b></td><td>5,415,693 ops/sec ±19.19% (27 runs sampled)</td></tr><tr><td><b>lookup table</b></td><td>9,930,633 ops/sec ±15.73% (35 runs sampled)</td></tr></table>
+
+> Notes:
+> - Fastest is if else
+

@@ -74,6 +74,7 @@ You can find the result sets [here](https://github.com/majimboo/node_benchmarks/
 - [array_loop](results/array_loop.md)
 - [array_map](results/array_map.md)
 - [array_prepend](results/array_prepend.md)
+- [array_slice_varg](results/array_slice_varg.md)
 - [bluebird_vs_q](results/bluebird_vs_q.md)
 - [buf_read](results/buf_read.md)
 - [buf_write](results/buf_write.md)

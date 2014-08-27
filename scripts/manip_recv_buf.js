@@ -1,13 +1,13 @@
 'use strict';
 
 var Benchmark  = require('benchmark');
-var suite      = new Benchmark.Suite;
+var suite      = new Benchmark.Suite();
 
 var net = require('net');
 
-var server = net.createServer().listen(9999);
+var server = net.createServer().listen(4141);
 var socket = new net.Socket();
-socket.connect(9999);
+socket.connect(4141);
 
 function strToInt(string) {
   var len = string.length;
@@ -83,7 +83,7 @@ suite
   buf.unshift(len + 1);
 
   var mockbuf = intToStr(buf);
-  socket.write(mockbuf, 'utf8');
+  socket.write(mockbuf);
 })
 
 // .add('string', function() {

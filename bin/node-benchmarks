@@ -56,7 +56,10 @@ glob(path.join(scriptsPath, '*.js'), function (err, files) {
 
             lines.forEach(function(data) {
                 if (program.dryrun) {
-                    console.log(data);
+                    if (data.length) {
+                        console.log('|-> ' + data);
+                    }
+                    return;
                 }
 
                 if (data.length) {
@@ -80,7 +83,7 @@ glob(path.join(scriptsPath, '*.js'), function (err, files) {
 
             fs.appendFileSync(resultPath, '\n\n');
             done++;
-            console.log('['+done+'/'+total+']\t' + path.basename(file, '.js'));
+            console.log('['+done+'/'+total+']\t' + path.basename(file, '.js') + '\n\n');
         });
     });
 

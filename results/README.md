@@ -3,6 +3,7 @@
 - [array_loop](array_loop.md)
 - [array_map](array_map.md)
 - [array_prepend](array_prepend.md)
+- [array_slice_varg](array_slice_varg.md)
 - [bluebird_vs_q](bluebird_vs_q.md)
 - [buf_read](buf_read.md)
 - [buf_write](buf_write.md)
